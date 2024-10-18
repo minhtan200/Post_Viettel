@@ -16,7 +16,7 @@ namespace Post_Nhanh
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new DangKy());
+            Application.Run(new DangNhap());
         }
     }
 }

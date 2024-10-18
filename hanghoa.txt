@@ -1,0 +1,69 @@
+ double totalWeight = 0;
+            double totalValue = 0;
+
+            foreach (Control control in this.Controls)
+            {
+                if (control is GroupBox groupBox)
+                {
+                     Read the values from TextBoxes in the GroupBox
+                    string productName = string.Empty;
+                    double length = null, weight = null, height = null;
+
+                    foreach (Control groupControl in groupBox.Controls)
+                    {
+                        if (groupControl is TextBox textBox)
+                        {
+                            switch (textBox.Name)
+                            {
+                                case string name when name.StartsWith(textBoxTenSP)
+                                    productName = textBox.Text;
+                                    break;
+                                case string name when name.StartsWith(textBoxLength)
+                                    length = ParseNullableDouble(textBox.Text);
+                                    break;
+                                case string name when name.StartsWith(textBoxWeight)
+                                    weight = ParseNullableDouble(textBox.Text);
+                                    break;
+                                case string name when name.StartsWith(textBoxHeight)
+                                    height = ParseNullableDouble(textBox.Text);
+                                    break;
+                            }
+                        }
+                    }
+
+                     Calculate total weight and value
+                    if (length.HasValue && weight.HasValue && height.HasValue)
+                    {
+                         Example calculate volume as total weight for demonstration purposes
+                        totalWeight += (length.Value  weight.Value  height.Value);
+                         Update the total value calculation if needed
+                        totalValue += weight.Value;  Example value; adjust according to your logic
+                    }
+                }
+            }
+
+             Set the calculated totals to the TextBoxes
+            textBoxTotalWeight.Text = totalWeight.ToString();
+            textBoxTotalGT.Text = totalValue.ToString();
+
+             Save data to MongoDB
+            PostalItems postalItem = new PostalItems
+            {
+                ProductName = Tổng sản phẩm,  Adjust accordingly
+                TotalWeight = totalWeight,
+                TotalValue = totalValue,
+                Image1 = pictureBox1.Image != null  Đường dẫn đến ảnh 1  null,  Update with actual path
+                Image2 = pictureBox2.Image != null  Đường dẫn đến ảnh 2  null  Update with actual path
+            };
+
+            _postalItemsCollection.InsertOne(postalItem);
+
+             Show success message
+            MessageBox.Show(Thông tin đã được lưu thành công!);
+
+             Clear input fields if needed
+            ClearInputs();
+            buttonDeleteImage.PerformClick();  Clear images
+            CuocPhi cp = new CuocPhi();
+            cp.Show();
+            this.Hide();

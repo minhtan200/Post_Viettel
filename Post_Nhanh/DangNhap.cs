@@ -74,8 +74,9 @@ namespace Post_Nhanh
             if (customer != null)
             {
                 MessageBox.Show("Đăng nhập thành công!");
-                // Mở form chính hoặc form khác sau khi đăng nhập thành công
-                MainForm mainForm = new MainForm();
+
+                // Mở form chính và truyền thông tin người dùng
+                TrangChu mainForm = new TrangChu(customer.Name, customer.PhoneNumber);
                 mainForm.Show();
                 this.Hide();
             }
@@ -83,6 +84,7 @@ namespace Post_Nhanh
             {
                 MessageBox.Show("Số điện thoại hoặc mật khẩu không đúng.");
             }
+
         }
     }
 }

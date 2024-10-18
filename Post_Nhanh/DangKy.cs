@@ -90,6 +90,13 @@ namespace Post_Nhanh
             }
 
             // Kiểm tra xác nhận mật khẩu
+            if (string.IsNullOrEmpty(confirmPassword))
+            {
+                MessageBox.Show("Bạn phải nhập mật khẩu xác nhận.");
+                textBoxMK2.Focus();
+                return;
+            }
+
             if (password != confirmPassword)
             {
                 MessageBox.Show("Mật khẩu xác nhận không khớp.");

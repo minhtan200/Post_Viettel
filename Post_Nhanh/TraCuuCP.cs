@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Post_Nhanh
 {
-    public partial class MainForm : Form
+    public partial class TraCuuCP : Form
     {
-        public MainForm()
+        public TraCuuCP()
         {
             InitializeComponent();
         }

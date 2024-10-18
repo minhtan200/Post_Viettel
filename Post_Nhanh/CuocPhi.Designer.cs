@@ -31,413 +31,342 @@ namespace Post_Nhanh
         /// </summary>
         private void InitializeComponent()
         {
-            components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CuocPhi));
-            groupBox1 = new GroupBox();
-            pictureBox3 = new PictureBox();
-            pictureBox2 = new PictureBox();
-            pictureBox1 = new PictureBox();
-            label7 = new Label();
-            label6 = new Label();
-            label5 = new Label();
-            label4 = new Label();
-            label3 = new Label();
-            label2 = new Label();
-            radioButton3 = new RadioButton();
-            radioButton2 = new RadioButton();
-            radioButton1 = new RadioButton();
-            label1 = new Label();
-            groupBox2 = new GroupBox();
-            checkBox2 = new CheckBox();
-            label9 = new Label();
-            label8 = new Label();
-            groupBox3 = new GroupBox();
-            label12 = new Label();
-            label11 = new Label();
-            chkDongKiem = new CheckBox();
-            label10 = new Label();
-            chkBaoHiem = new CheckBox();
-            btnXacNhan = new Button();
-            btnHuyBo = new Button();
-            label13 = new Label();
-            txtTongTien = new TextBox();
-            txtGhichu = new TextBox();
-            label14 = new Label();
-            toolTip1 = new ToolTip(components);
-            groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
-            groupBox2.SuspendLayout();
-            groupBox3.SuspendLayout();
-            SuspendLayout();
+            this.components = new System.ComponentModel.Container();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.radioButton3 = new System.Windows.Forms.RadioButton();
+            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.checkBox2 = new System.Windows.Forms.CheckBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.chkDongKiem = new System.Windows.Forms.CheckBox();
+            this.chkBaoHiem = new System.Windows.Forms.CheckBox();
+            this.btnXacNhan = new System.Windows.Forms.Button();
+            this.btnHuyBo = new System.Windows.Forms.Button();
+            this.label13 = new System.Windows.Forms.Label();
+            this.txtGhichu = new System.Windows.Forms.TextBox();
+            this.label14 = new System.Windows.Forms.Label();
+            this.lblTongTien = new System.Windows.Forms.Label();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
+            this.textBoxTietKiem = new System.Windows.Forms.TextBox();
+            this.textBoxNhanh = new System.Windows.Forms.TextBox();
+            this.textBoxHoaToc = new System.Windows.Forms.TextBox();
+            this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.groupBox2.SuspendLayout();
+            this.groupBox3.SuspendLayout();
+            this.SuspendLayout();
             // 
             // groupBox1
             // 
-            groupBox1.Controls.Add(pictureBox3);
-            groupBox1.Controls.Add(pictureBox2);
-            groupBox1.Controls.Add(pictureBox1);
-            groupBox1.Controls.Add(label7);
-            groupBox1.Controls.Add(label6);
-            groupBox1.Controls.Add(label5);
-            groupBox1.Controls.Add(label4);
-            groupBox1.Controls.Add(label3);
-            groupBox1.Controls.Add(label2);
-            groupBox1.Controls.Add(radioButton3);
-            groupBox1.Controls.Add(radioButton2);
-            groupBox1.Controls.Add(radioButton1);
-            groupBox1.Controls.Add(label1);
-            groupBox1.Location = new Point(12, 12);
-            groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(448, 270);
-            groupBox1.TabIndex = 0;
-            groupBox1.TabStop = false;
-            groupBox1.Text = "groupBox1";
+            this.groupBox1.Controls.Add(this.textBoxHoaToc);
+            this.groupBox1.Controls.Add(this.textBoxNhanh);
+            this.groupBox1.Controls.Add(this.textBoxTietKiem);
+            this.groupBox1.Controls.Add(this.pictureBox3);
+            this.groupBox1.Controls.Add(this.pictureBox2);
+            this.groupBox1.Controls.Add(this.pictureBox1);
+            this.groupBox1.Controls.Add(this.label4);
+            this.groupBox1.Controls.Add(this.label3);
+            this.groupBox1.Controls.Add(this.label2);
+            this.groupBox1.Controls.Add(this.radioButton3);
+            this.groupBox1.Controls.Add(this.radioButton2);
+            this.groupBox1.Controls.Add(this.radioButton1);
+            this.groupBox1.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.groupBox1.Location = new System.Drawing.Point(20, 20);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(400, 230);
+            this.groupBox1.TabIndex = 0;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Dịch vụ vận chuyển";
             // 
             // pictureBox3
             // 
-            pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
-            pictureBox3.Location = new Point(29, 192);
-            pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(36, 34);
-            pictureBox3.TabIndex = 12;
-            pictureBox3.TabStop = false;
+            this.pictureBox3.Location = new System.Drawing.Point(20, 154);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(32, 32);
+            this.pictureBox3.TabIndex = 0;
+            this.pictureBox3.TabStop = false;
             // 
             // pictureBox2
             // 
-            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(29, 60);
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(36, 34);
-            pictureBox2.TabIndex = 11;
-            pictureBox2.TabStop = false;
+            this.pictureBox2.Location = new System.Drawing.Point(20, 103);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(32, 32);
+            this.pictureBox2.TabIndex = 1;
+            this.pictureBox2.TabStop = false;
             // 
             // pictureBox1
             // 
-            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(29, 122);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(36, 34);
-            pictureBox1.TabIndex = 10;
-            pictureBox1.TabStop = false;
-            // 
-            // label7
-            // 
-            label7.AutoSize = true;
-            label7.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            label7.ForeColor = Color.Red;
-            label7.Location = new Point(300, 199);
-            label7.Name = "label7";
-            label7.Size = new Size(93, 25);
-            label7.TabIndex = 9;
-            label7.Text = "216.000 đ";
-            // 
-            // label6
-            // 
-            label6.AutoSize = true;
-            label6.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            label6.ForeColor = Color.Red;
-            label6.Location = new Point(300, 131);
-            label6.Name = "label6";
-            label6.Size = new Size(83, 25);
-            label6.TabIndex = 8;
-            label6.Text = "38.500 đ";
-            // 
-            // label5
-            // 
-            label5.AutoSize = true;
-            label5.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            label5.ForeColor = Color.Red;
-            label5.Location = new Point(300, 65);
-            label5.Name = "label5";
-            label5.Size = new Size(83, 25);
-            label5.TabIndex = 7;
-            label5.Text = "31.000 đ";
+            this.pictureBox1.Location = new System.Drawing.Point(20, 52);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(32, 32);
+            this.pictureBox1.TabIndex = 2;
+            this.pictureBox1.TabStop = false;
             // 
             // label4
             // 
-            label4.AutoSize = true;
-            label4.Font = new Font("Segoe UI", 7F);
-            label4.Location = new Point(97, 229);
-            label4.Name = "label4";
-            label4.Size = new Size(193, 19);
-            label4.TabIndex = 6;
-            label4.Text = "Thời gian giao dự kiến: 2 ngày";
+            this.label4.Location = new System.Drawing.Point(80, 183);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(150, 23);
+            this.label4.TabIndex = 6;
+            this.label4.Text = "Thời gian dự kiến: 2 ngày";
             // 
             // label3
             // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Segoe UI", 7F);
-            label3.Location = new Point(97, 156);
-            label3.Name = "label3";
-            label3.Size = new Size(193, 19);
-            label3.TabIndex = 5;
-            label3.Text = "Thời gian giao dự kiến: 3 ngày";
+            this.label3.Location = new System.Drawing.Point(80, 130);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(150, 23);
+            this.label3.TabIndex = 7;
+            this.label3.Text = "Thời gian dự kiến: 3 ngày";
             // 
             // label2
             // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Segoe UI", 7F);
-            label2.Location = new Point(97, 97);
-            label2.Name = "label2";
-            label2.Size = new Size(204, 19);
-            label2.TabIndex = 4;
-            label2.Text = "Thời gian giao dự kiến: 4.5 ngày";
+            this.label2.Location = new System.Drawing.Point(80, 78);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(150, 23);
+            this.label2.TabIndex = 8;
+            this.label2.Text = "Thời gian dự kiến: 4.5 ngày";
             // 
             // radioButton3
             // 
-            radioButton3.AutoSize = true;
-            radioButton3.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            radioButton3.Location = new Point(71, 197);
-            radioButton3.Name = "radioButton3";
-            radioButton3.Size = new Size(178, 29);
-            radioButton3.TabIndex = 3;
-            radioButton3.TabStop = true;
-            radioButton3.Text = "Hỏa tốc, hẹn giờ";
-            radioButton3.UseVisualStyleBackColor = true;
+            this.radioButton3.Location = new System.Drawing.Point(60, 158);
+            this.radioButton3.Name = "radioButton3";
+            this.radioButton3.Size = new System.Drawing.Size(104, 28);
+            this.radioButton3.TabIndex = 9;
+            this.radioButton3.Text = "Hỏa tốc";
             // 
             // radioButton2
             // 
-            radioButton2.AutoSize = true;
-            radioButton2.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            radioButton2.Location = new Point(71, 129);
-            radioButton2.Name = "radioButton2";
-            radioButton2.Size = new Size(150, 29);
-            radioButton2.TabIndex = 2;
-            radioButton2.TabStop = true;
-            radioButton2.Text = "TMDT Nhanh";
-            radioButton2.UseVisualStyleBackColor = true;
+            this.radioButton2.Location = new System.Drawing.Point(60, 105);
+            this.radioButton2.Name = "radioButton2";
+            this.radioButton2.Size = new System.Drawing.Size(104, 28);
+            this.radioButton2.TabIndex = 10;
+            this.radioButton2.Text = "TMDT Nhanh";
             // 
             // radioButton1
             // 
-            radioButton1.AutoSize = true;
-            radioButton1.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            radioButton1.Location = new Point(71, 65);
-            radioButton1.Name = "radioButton1";
-            radioButton1.Size = new Size(174, 29);
-            radioButton1.TabIndex = 1;
-            radioButton1.TabStop = true;
-            radioButton1.Text = "TMDT Tiết Kiệm";
-            radioButton1.UseVisualStyleBackColor = true;
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
-            label1.Location = new Point(97, 30);
-            label1.Name = "label1";
-            label1.Size = new Size(237, 32);
-            label1.TabIndex = 0;
-            label1.Text = "Dịch vụ vận chuyển";
+            this.radioButton1.Location = new System.Drawing.Point(60, 52);
+            this.radioButton1.Name = "radioButton1";
+            this.radioButton1.Size = new System.Drawing.Size(150, 28);
+            this.radioButton1.TabIndex = 11;
+            this.radioButton1.Text = "TMDT Tiết Kiệm";
             // 
             // groupBox2
             // 
-            groupBox2.Controls.Add(checkBox2);
-            groupBox2.Controls.Add(label9);
-            groupBox2.Controls.Add(label8);
-            groupBox2.Location = new Point(508, 23);
-            groupBox2.Name = "groupBox2";
-            groupBox2.Size = new Size(448, 127);
-            groupBox2.TabIndex = 1;
-            groupBox2.TabStop = false;
-            groupBox2.Text = "groupBox2";
+            this.groupBox2.Controls.Add(this.checkBox2);
+            this.groupBox2.Controls.Add(this.label9);
+            this.groupBox2.Controls.Add(this.label8);
+            this.groupBox2.Location = new System.Drawing.Point(450, 20);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(350, 100);
+            this.groupBox2.TabIndex = 1;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Tính chất hàng hóa";
             // 
             // checkBox2
             // 
-            checkBox2.AutoSize = true;
-            checkBox2.Location = new Point(71, 74);
-            checkBox2.Name = "checkBox2";
-            checkBox2.Size = new Size(164, 29);
-            checkBox2.TabIndex = 15;
-            checkBox2.Text = "Hàng giá trị cao";
-            checkBox2.UseVisualStyleBackColor = true;
+            this.checkBox2.Location = new System.Drawing.Point(30, 60);
+            this.checkBox2.Name = "checkBox2";
+            this.checkBox2.Size = new System.Drawing.Size(104, 24);
+            this.checkBox2.TabIndex = 0;
+            this.checkBox2.Text = "Hàng giá trị cao";
             // 
             // label9
             // 
-            label9.AutoSize = true;
-            label9.Font = new Font("Segoe UI", 9F);
-            label9.ForeColor = SystemColors.ActiveCaptionText;
-            label9.Location = new Point(300, 78);
-            label9.Name = "label9";
-            label9.Size = new Size(72, 25);
-            label9.TabIndex = 13;
-            label9.Text = "4.999 đ";
+            this.label9.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.label9.ForeColor = System.Drawing.Color.Red;
+            this.label9.Location = new System.Drawing.Point(250, 60);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(100, 23);
+            this.label9.TabIndex = 1;
+            this.label9.Text = "4.999 đ";
             // 
             // label8
             // 
-            label8.AutoSize = true;
-            label8.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
-            label8.Location = new Point(44, 27);
-            label8.Name = "label8";
-            label8.Size = new Size(330, 32);
-            label8.TabIndex = 13;
-            label8.Text = "Tính chất hàng hóa đặc biệt";
+            this.label8.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.label8.Location = new System.Drawing.Point(30, 20);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(220, 37);
+            this.label8.TabIndex = 2;
+            this.label8.Text = "Hàng hóa đặc biệt";
             // 
             // groupBox3
             // 
-            groupBox3.Controls.Add(label12);
-            groupBox3.Controls.Add(label11);
-            groupBox3.Controls.Add(chkDongKiem);
-            groupBox3.Controls.Add(label10);
-            groupBox3.Controls.Add(chkBaoHiem);
-            groupBox3.Location = new Point(508, 168);
-            groupBox3.Name = "groupBox3";
-            groupBox3.Size = new Size(448, 177);
-            groupBox3.TabIndex = 2;
-            groupBox3.TabStop = false;
-            groupBox3.Text = "groupBox3";
+            this.groupBox3.Controls.Add(this.label12);
+            this.groupBox3.Controls.Add(this.label11);
+            this.groupBox3.Controls.Add(this.chkDongKiem);
+            this.groupBox3.Controls.Add(this.chkBaoHiem);
+            this.groupBox3.Location = new System.Drawing.Point(450, 130);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(350, 130);
+            this.groupBox3.TabIndex = 2;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Dịch vụ cộng thêm";
             // 
             // label12
             // 
-            label12.AutoSize = true;
-            label12.Font = new Font("Segoe UI", 9F);
-            label12.ForeColor = SystemColors.ActiveCaptionText;
-            label12.Location = new Point(300, 132);
-            label12.Name = "label12";
-            label12.Size = new Size(82, 25);
-            label12.TabIndex = 17;
-            label12.Text = "16.500 đ";
+            this.label12.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.label12.ForeColor = System.Drawing.Color.Red;
+            this.label12.Location = new System.Drawing.Point(250, 100);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(100, 23);
+            this.label12.TabIndex = 0;
+            this.label12.Text = "16.500 đ";
             // 
             // label11
             // 
-            label11.AutoSize = true;
-            label11.Font = new Font("Segoe UI", 9F);
-            label11.ForeColor = SystemColors.ActiveCaptionText;
-            label11.Location = new Point(300, 85);
-            label11.Name = "label11";
-            label11.Size = new Size(72, 25);
-            label11.TabIndex = 16;
-            label11.Text = "4.999 đ";
+            this.label11.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.label11.ForeColor = System.Drawing.Color.Red;
+            this.label11.Location = new System.Drawing.Point(250, 60);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(100, 23);
+            this.label11.TabIndex = 1;
+            this.label11.Text = "4.999 đ";
             // 
             // chkDongKiem
             // 
-            chkDongKiem.AutoSize = true;
-            chkDongKiem.Location = new Point(71, 132);
-            chkDongKiem.Name = "chkDongKiem";
-            chkDongKiem.Size = new Size(126, 29);
-            chkDongKiem.TabIndex = 16;
-            chkDongKiem.Text = "Đồng kiểm";
-            chkDongKiem.UseVisualStyleBackColor = true;
-            // 
-            // label10
-            // 
-            label10.AutoSize = true;
-            label10.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
-            label10.Location = new Point(44, 27);
-            label10.Name = "label10";
-            label10.Size = new Size(268, 32);
-            label10.TabIndex = 15;
-            label10.Text = "Dịch vụ cộng thêm (0)";
+            this.chkDongKiem.Location = new System.Drawing.Point(30, 100);
+            this.chkDongKiem.Name = "chkDongKiem";
+            this.chkDongKiem.Size = new System.Drawing.Size(104, 24);
+            this.chkDongKiem.TabIndex = 2;
+            this.chkDongKiem.Text = "Đồng kiểm";
             // 
             // chkBaoHiem
             // 
-            chkBaoHiem.AutoSize = true;
-            chkBaoHiem.Location = new Point(71, 81);
-            chkBaoHiem.Name = "chkBaoHiem";
-            chkBaoHiem.Size = new Size(201, 29);
-            chkBaoHiem.TabIndex = 14;
-            chkBaoHiem.Text = "Bảo hiểm và khai giá";
-            chkBaoHiem.UseVisualStyleBackColor = true;
+            this.chkBaoHiem.Location = new System.Drawing.Point(30, 60);
+            this.chkBaoHiem.Name = "chkBaoHiem";
+            this.chkBaoHiem.Size = new System.Drawing.Size(220, 24);
+            this.chkBaoHiem.TabIndex = 3;
+            this.chkBaoHiem.Text = "Bảo hiểm và khai giá";
             // 
             // btnXacNhan
             // 
-            btnXacNhan.BackColor = Color.MediumSeaGreen;
-            btnXacNhan.Location = new Point(537, 395);
-            btnXacNhan.Name = "btnXacNhan";
-            btnXacNhan.Size = new Size(157, 65);
-            btnXacNhan.TabIndex = 3;
-            btnXacNhan.Text = "Xác nhận";
-            btnXacNhan.UseVisualStyleBackColor = false;
-
+            this.btnXacNhan.BackColor = System.Drawing.Color.MediumSeaGreen;
+            this.btnXacNhan.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.btnXacNhan.Location = new System.Drawing.Point(480, 295);
+            this.btnXacNhan.Name = "btnXacNhan";
+            this.btnXacNhan.Size = new System.Drawing.Size(141, 90);
+            this.btnXacNhan.TabIndex = 3;
+            this.btnXacNhan.Text = "Xác nhận";
+            this.btnXacNhan.UseVisualStyleBackColor = false;
             // 
             // btnHuyBo
             // 
-            btnHuyBo.BackColor = Color.Red;
-            btnHuyBo.Location = new Point(761, 395);
-            btnHuyBo.Name = "btnHuyBo";
-            btnHuyBo.Size = new Size(153, 65);
-            btnHuyBo.TabIndex = 4;
-            btnHuyBo.Text = "Hủy bỏ";
-            btnHuyBo.UseVisualStyleBackColor = false;
+            this.btnHuyBo.BackColor = System.Drawing.Color.Red;
+            this.btnHuyBo.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.btnHuyBo.Location = new System.Drawing.Point(680, 302);
+            this.btnHuyBo.Name = "btnHuyBo";
+            this.btnHuyBo.Size = new System.Drawing.Size(130, 83);
+            this.btnHuyBo.TabIndex = 4;
+            this.btnHuyBo.Text = "Hủy bỏ";
+            this.btnHuyBo.UseVisualStyleBackColor = false;
             // 
             // label13
             // 
-            label13.AutoSize = true;
-            label13.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
-            label13.Location = new Point(12, 428);
-            label13.Name = "label13";
-            label13.Size = new Size(129, 32);
-            label13.TabIndex = 5;
-            label13.Text = "Tổng Tiền";
-            // 
-            // txtTongTien
-            // 
-            txtTongTien.Location = new Point(183, 431);
-            txtTongTien.Name = "txtTongTien";
-            txtTongTien.Size = new Size(150, 31);
-            txtTongTien.TabIndex = 6;
+            this.label13.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold);
+            this.label13.ForeColor = System.Drawing.Color.DarkBlue;
+            this.label13.Location = new System.Drawing.Point(20, 365);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(150, 90);
+            this.label13.TabIndex = 5;
+            this.label13.Text = "Tổng tiền:";
             // 
             // txtGhichu
             // 
-            txtGhichu.Location = new Point(183, 297);
-            txtGhichu.Multiline = true;
-            txtGhichu.Name = "txtGhichu";
-            txtGhichu.Size = new Size(300, 100);
-            txtGhichu.TabIndex = 7;
+            this.txtGhichu.Location = new System.Drawing.Point(178, 270);
+            this.txtGhichu.Multiline = true;
+            this.txtGhichu.Name = "txtGhichu";
+            this.txtGhichu.Size = new System.Drawing.Size(250, 80);
+            this.txtGhichu.TabIndex = 7;
             // 
             // label14
             // 
-            label14.AutoSize = true;
-            label14.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
-            label14.Location = new Point(12, 313);
-            label14.Name = "label14";
-            label14.Size = new Size(152, 32);
-            label14.TabIndex = 8;
-            label14.Text = "Ghi chú đơn";
+            this.label14.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.label14.Location = new System.Drawing.Point(20, 270);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(150, 80);
+            this.label14.TabIndex = 8;
+            this.label14.Text = "Ghi chú đơn hàng";
             // 
-            // toolTip1
+            // lblTongTien
             // 
+            this.lblTongTien.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold);
+            this.lblTongTien.ForeColor = System.Drawing.Color.Red;
+            this.lblTongTien.Location = new System.Drawing.Point(176, 388);
+            this.lblTongTien.Name = "lblTongTien";
+            this.lblTongTien.Size = new System.Drawing.Size(150, 45);
+            this.lblTongTien.TabIndex = 6;
+            this.lblTongTien.Text = "0 đ";
+            // 
+            // textBoxTietKiem
+            // 
+            this.textBoxTietKiem.Enabled = false;
+            this.textBoxTietKiem.Location = new System.Drawing.Point(291, 50);
+            this.textBoxTietKiem.Name = "textBoxTietKiem";
+            this.textBoxTietKiem.Size = new System.Drawing.Size(89, 30);
+            this.textBoxTietKiem.TabIndex = 12;
+            // 
+            // textBoxNhanh
+            // 
+            this.textBoxNhanh.Enabled = false;
+            this.textBoxNhanh.Location = new System.Drawing.Point(291, 103);
+            this.textBoxNhanh.Name = "textBoxNhanh";
+            this.textBoxNhanh.Size = new System.Drawing.Size(89, 30);
+            this.textBoxNhanh.TabIndex = 13;
+            // 
+            // textBoxHoaToc
+            // 
+            this.textBoxHoaToc.Enabled = false;
+            this.textBoxHoaToc.Location = new System.Drawing.Point(291, 163);
+            this.textBoxHoaToc.Name = "textBoxHoaToc";
+            this.textBoxHoaToc.Size = new System.Drawing.Size(89, 30);
+            this.textBoxHoaToc.TabIndex = 14;
+            // 
+            // CuocPhi
+            // 
+            this.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.ClientSize = new System.Drawing.Size(1083, 540);
+            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.groupBox2);
+            this.Controls.Add(this.groupBox3);
+            this.Controls.Add(this.btnXacNhan);
+            this.Controls.Add(this.btnHuyBo);
+            this.Controls.Add(this.label13);
+            this.Controls.Add(this.lblTongTien);
+            this.Controls.Add(this.txtGhichu);
+            this.Controls.Add(this.label14);
+            this.Name = "CuocPhi";
+            this.Text = "Tính Phí Giao Hàng";
+            this.Load += new System.EventHandler(this.CuocPhi_Load_1);
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox3.ResumeLayout(false);
+            this.ResumeLayout(false);
+            this.PerformLayout();
 
-            // 
-            // Cuocphi
-            // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
-            AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1302, 716);
-            Controls.Add(label14);
-            Controls.Add(txtGhichu);
-            Controls.Add(txtTongTien);
-            Controls.Add(label13);
-            Controls.Add(btnHuyBo);
-            Controls.Add(btnXacNhan);
-            Controls.Add(groupBox3);
-            Controls.Add(groupBox2);
-            Controls.Add(groupBox1);
-            Name = "Cuocphi";
-            Text = "Form1";
-            groupBox1.ResumeLayout(false);
-            groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
-            groupBox2.ResumeLayout(false);
-            groupBox2.PerformLayout();
-            groupBox3.ResumeLayout(false);
-            groupBox3.PerformLayout();
-            ResumeLayout(false);
-            PerformLayout();
-        }
+            }
 
         #endregion
 
-
-
         private GroupBox groupBox1;
-        private Label label1;
         private GroupBox groupBox2;
         private GroupBox groupBox3;
-        private Label label6;
-        private Label label5;
         private Label label4;
         private Label label3;
         private Label label2;
@@ -445,13 +374,11 @@ namespace Post_Nhanh
         private RadioButton radioButton2;
         private RadioButton radioButton1;
         private PictureBox pictureBox1;
-        private Label label7;
         private PictureBox pictureBox3;
         private PictureBox pictureBox2;
         private CheckBox chkBaoHiem;
         private Label label8;
         private Label label9;
-        private Label label10;
         private CheckBox checkBox2;
         private Label label12;
         private Label label11;
@@ -459,9 +386,12 @@ namespace Post_Nhanh
         private Button btnXacNhan;
         private Button btnHuyBo;
         private Label label13;
-        private TextBox txtTongTien;
         private TextBox txtGhichu;
         private Label label14;
         private ToolTip toolTip1;
+        private Label lblTongTien;
+        private TextBox textBoxHoaToc;
+        private TextBox textBoxNhanh;
+        private TextBox textBoxTietKiem;
     }
 }
