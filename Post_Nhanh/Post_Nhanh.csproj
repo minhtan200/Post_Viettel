@@ -35,6 +35,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="BCrypt.Net-Next, Version=4.0.3.0, Culture=neutral, PublicKeyToken=1e11be04b6288443, processorArchitecture=MSIL">
+      <HintPath>..\packages\BCrypt.Net-Next.4.0.3\lib\net472\BCrypt.Net-Next.dll</HintPath>
+    </Reference>
     <Reference Include="DnsClient, Version=1.6.1.0, Culture=neutral, PublicKeyToken=4574bb5573c51424, processorArchitecture=MSIL">
       <HintPath>..\packages\DnsClient.1.6.1\lib\net471\DnsClient.dll</HintPath>
     </Reference>
@@ -56,8 +59,14 @@
     <Reference Include="MongoDB.Libmongocrypt, Version=1.12.0.0, Culture=neutral, PublicKeyToken=94992a530f44e321, processorArchitecture=MSIL">
       <HintPath>..\packages\MongoDB.Libmongocrypt.1.12.0\lib\net472\MongoDB.Libmongocrypt.dll</HintPath>
     </Reference>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="SharpCompress, Version=0.30.1.0, Culture=neutral, PublicKeyToken=afb0a02973931d96, processorArchitecture=MSIL">
       <HintPath>..\packages\SharpCompress.0.30.1\lib\net461\SharpCompress.dll</HintPath>
+    </Reference>
+    <Reference Include="SiteLib.Bcy.Net, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\SiteLib.Bcy.Net.1.0.0\lib\netstandard2.0\SiteLib.Bcy.Net.dll</HintPath>
     </Reference>
     <Reference Include="Snappier, Version=1.0.0.0, Culture=neutral, PublicKeyToken=a1b25124e6e13a3a, processorArchitecture=MSIL">
       <HintPath>..\packages\Snappier.1.0.0\lib\netstandard2.0\Snappier.dll</HintPath>
@@ -143,11 +152,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CuocPhi.cs">
+    <Compile Include="AddDon.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CuocPhi.Designer.cs">
-      <DependentUpon>CuocPhi.cs</DependentUpon>
+    <Compile Include="AddDon.Designer.cs">
+      <DependentUpon>AddDon.cs</DependentUpon>
     </Compile>
     <Compile Include="DangKy.cs">
       <SubType>Form</SubType>
@@ -161,18 +170,16 @@
     <Compile Include="DangNhap.Designer.cs">
       <DependentUpon>DangNhap.cs</DependentUpon>
     </Compile>
-    <Compile Include="DiaChi.cs">
+    <Compile Include="HoanThanh.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DiaChi.Designer.cs">
-      <DependentUpon>DiaChi.cs</DependentUpon>
+    <Compile Include="HoanThanh.Designer.cs">
+      <DependentUpon>HoanThanh.cs</DependentUpon>
     </Compile>
-    <Compile Include="HangHoa.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="HangHoa.Designer.cs">
-      <DependentUpon>HangHoa.cs</DependentUpon>
-    </Compile>
+    <Compile Include="Models\DonHang.cs" />
+    <Compile Include="Models\ProductInfo.cs" />
+    <Compile Include="Models\SenderReceiverInfo.cs" />
+    <Compile Include="Models\ShippingInfo.cs" />
     <Compile Include="TrangChu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -202,8 +209,8 @@
     <Compile Include="TraCuuGH.Designer.cs">
       <DependentUpon>TraCuuGH.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="CuocPhi.resx">
-      <DependentUpon>CuocPhi.cs</DependentUpon>
+    <EmbeddedResource Include="AddDon.resx">
+      <DependentUpon>AddDon.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DangKy.resx">
       <DependentUpon>DangKy.cs</DependentUpon>
@@ -211,11 +218,8 @@
     <EmbeddedResource Include="DangNhap.resx">
       <DependentUpon>DangNhap.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="DiaChi.resx">
-      <DependentUpon>DiaChi.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="HangHoa.resx">
-      <DependentUpon>HangHoa.cs</DependentUpon>
+    <EmbeddedResource Include="HoanThanh.resx">
+      <DependentUpon>HoanThanh.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TrangChu.resx">
       <DependentUpon>TrangChu.cs</DependentUpon>

@@ -51,7 +51,7 @@ namespace Post_Nhanh
 
         private void btnTaoDon_Click(object sender, EventArgs e)
         {
-            DiaChi diaChi = new DiaChi();   
+            AddDon diaChi = new AddDon();   
             diaChi.Show();
             this.Hide();
         }

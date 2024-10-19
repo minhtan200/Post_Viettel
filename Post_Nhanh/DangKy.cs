@@ -10,6 +10,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using SiteLib.Bcy.Net;
+using BCrypt.Net;
+
 
 namespace Post_Nhanh
 {
@@ -49,7 +52,7 @@ namespace Post_Nhanh
             string password = textBoxMK.Text;
             string confirmPassword = textBoxMK2.Text;
 
-            // Kiểm tra email
+            // Kiểm tra các thông tin như email, số điện thoại, họ tên, mật khẩu
             if (string.IsNullOrEmpty(email))
             {
                 MessageBox.Show("Email không được để trống.");
@@ -57,7 +60,6 @@ namespace Post_Nhanh
                 return;
             }
 
-            // Kiểm tra số điện thoại
             if (string.IsNullOrEmpty(sodienthoai))
             {
                 MessageBox.Show("Số điện thoại không được để trống.");
@@ -65,7 +67,6 @@ namespace Post_Nhanh
                 return;
             }
 
-            // Kiểm tra họ tên
             if (string.IsNullOrEmpty(hoten))
             {
                 MessageBox.Show("Họ tên không được để trống.");
@@ -73,7 +74,6 @@ namespace Post_Nhanh
                 return;
             }
 
-            // Kiểm tra mật khẩu
             if (string.IsNullOrEmpty(password))
             {
                 MessageBox.Show("Mật khẩu không được để trống.");
@@ -81,7 +81,6 @@ namespace Post_Nhanh
                 return;
             }
 
-            // Kiểm tra độ dài mật khẩu (ít nhất 6 ký tự)
             if (password.Length < 6)
             {
                 MessageBox.Show("Mật khẩu phải có ít nhất 6 ký tự.");
@@ -89,7 +88,6 @@ namespace Post_Nhanh
                 return;
             }
 
-            // Kiểm tra xác nhận mật khẩu
             if (string.IsNullOrEmpty(confirmPassword))
             {
                 MessageBox.Show("Bạn phải nhập mật khẩu xác nhận.");
@@ -113,6 +111,9 @@ namespace Post_Nhanh
                 return;
             }
 
+            // Mã hóa mật khẩu
+            string hashedPassword = BCrypt.Net.BCrypt.HashPassword(password);
+
             // Tạo đối tượng Customer mới
             var newCustomer = new Customer
             {
@@ -120,7 +121,7 @@ namespace Post_Nhanh
                 Email = email,
                 PhoneNumber = sodienthoai,
                 Name = hoten,
-                Password = password // Bạn nên mã hóa mật khẩu trước khi lưu
+                Password = hashedPassword // Lưu mật khẩu đã được mã hóa
             };
 
             // Lưu thông tin người dùng vào MongoDB

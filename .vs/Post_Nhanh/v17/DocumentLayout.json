@@ -3,91 +3,36 @@
   "WorkspaceRootPath": "C:\\Git\\Post_Viettel\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B521908C-055F-4344-AF4C-4F0DF580DBF9}|Post_Nhanh\\Post_Nhanh.csproj|C:\\Git\\Post_Viettel\\post_nhanh\\dangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B521908C-055F-4344-AF4C-4F0DF580DBF9}|Post_Nhanh\\Post_Nhanh.csproj|solutionrelative:post_nhanh\\dangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B521908C-055F-4344-AF4C-4F0DF580DBF9}|Post_Nhanh\\Post_Nhanh.csproj|C:\\Git\\Post_Viettel\\post_nhanh\\adddon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B521908C-055F-4344-AF4C-4F0DF580DBF9}|Post_Nhanh\\Post_Nhanh.csproj|solutionrelative:post_nhanh\\adddon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B521908C-055F-4344-AF4C-4F0DF580DBF9}|Post_Nhanh\\Post_Nhanh.csproj|C:\\Git\\Post_Viettel\\post_nhanh\\dangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{B521908C-055F-4344-AF4C-4F0DF580DBF9}|Post_Nhanh\\Post_Nhanh.csproj|solutionrelative:post_nhanh\\dangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{B521908C-055F-4344-AF4C-4F0DF580DBF9}|Post_Nhanh\\Post_Nhanh.csproj|C:\\Git\\Post_Viettel\\post_nhanh\\adddon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B521908C-055F-4344-AF4C-4F0DF580DBF9}|Post_Nhanh\\Post_Nhanh.csproj|solutionrelative:post_nhanh\\adddon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B521908C-055F-4344-AF4C-4F0DF580DBF9}|Post_Nhanh\\Post_Nhanh.csproj|c:\\git\\post_viettel\\post_nhanh\\dangnhap.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B521908C-055F-4344-AF4C-4F0DF580DBF9}|Post_Nhanh\\Post_Nhanh.csproj|solutionrelative:post_nhanh\\dangnhap.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B521908C-055F-4344-AF4C-4F0DF580DBF9}|Post_Nhanh\\Post_Nhanh.csproj|C:\\Git\\Post_Viettel\\post_nhanh\\tracuugh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{B521908C-055F-4344-AF4C-4F0DF580DBF9}|Post_Nhanh\\Post_Nhanh.csproj|solutionrelative:post_nhanh\\tracuugh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B521908C-055F-4344-AF4C-4F0DF580DBF9}|Post_Nhanh\\Post_Nhanh.csproj|c:\\git\\post_viettel\\post_nhanh\\trangchu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{B521908C-055F-4344-AF4C-4F0DF580DBF9}|Post_Nhanh\\Post_Nhanh.csproj|solutionrelative:post_nhanh\\trangchu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B521908C-055F-4344-AF4C-4F0DF580DBF9}|Post_Nhanh\\Post_Nhanh.csproj|C:\\Git\\Post_Viettel\\post_nhanh\\cuocphi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{B521908C-055F-4344-AF4C-4F0DF580DBF9}|Post_Nhanh\\Post_Nhanh.csproj|solutionrelative:post_nhanh\\cuocphi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B521908C-055F-4344-AF4C-4F0DF580DBF9}|Post_Nhanh\\Post_Nhanh.csproj|C:\\Git\\Post_Viettel\\post_nhanh\\tracuucp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{B521908C-055F-4344-AF4C-4F0DF580DBF9}|Post_Nhanh\\Post_Nhanh.csproj|c:\\git\\post_viettel\\post_nhanh\\tracuucp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{B521908C-055F-4344-AF4C-4F0DF580DBF9}|Post_Nhanh\\Post_Nhanh.csproj|solutionrelative:post_nhanh\\tracuucp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B521908C-055F-4344-AF4C-4F0DF580DBF9}|Post_Nhanh\\Post_Nhanh.csproj|C:\\Git\\Post_Viettel\\post_nhanh\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B521908C-055F-4344-AF4C-4F0DF580DBF9}|Post_Nhanh\\Post_Nhanh.csproj|solutionrelative:post_nhanh\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B521908C-055F-4344-AF4C-4F0DF580DBF9}|Post_Nhanh\\Post_Nhanh.csproj|c:\\git\\post_viettel\\post_nhanh\\tracuugh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B521908C-055F-4344-AF4C-4F0DF580DBF9}|Post_Nhanh\\Post_Nhanh.csproj|solutionrelative:post_nhanh\\tracuugh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B521908C-055F-4344-AF4C-4F0DF580DBF9}|Post_Nhanh\\Post_Nhanh.csproj|C:\\Git\\Post_Viettel\\post_nhanh\\diachi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B521908C-055F-4344-AF4C-4F0DF580DBF9}|Post_Nhanh\\Post_Nhanh.csproj|solutionrelative:post_nhanh\\diachi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B521908C-055F-4344-AF4C-4F0DF580DBF9}|Post_Nhanh\\Post_Nhanh.csproj|C:\\Git\\Post_Viettel\\post_nhanh\\hoanthanh.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B521908C-055F-4344-AF4C-4F0DF580DBF9}|Post_Nhanh\\Post_Nhanh.csproj|solutionrelative:post_nhanh\\hoanthanh.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B521908C-055F-4344-AF4C-4F0DF580DBF9}|Post_Nhanh\\Post_Nhanh.csproj|C:\\Git\\Post_Viettel\\post_nhanh\\diachi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{B521908C-055F-4344-AF4C-4F0DF580DBF9}|Post_Nhanh\\Post_Nhanh.csproj|solutionrelative:post_nhanh\\diachi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{B521908C-055F-4344-AF4C-4F0DF580DBF9}|Post_Nhanh\\Post_Nhanh.csproj|C:\\Git\\Post_Viettel\\post_nhanh\\hoanthanh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B521908C-055F-4344-AF4C-4F0DF580DBF9}|Post_Nhanh\\Post_Nhanh.csproj|solutionrelative:post_nhanh\\hoanthanh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B521908C-055F-4344-AF4C-4F0DF580DBF9}|Post_Nhanh\\Post_Nhanh.csproj|C:\\Git\\Post_Viettel\\post_nhanh\\hanghoa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B521908C-055F-4344-AF4C-4F0DF580DBF9}|Post_Nhanh\\Post_Nhanh.csproj|solutionrelative:post_nhanh\\hanghoa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B521908C-055F-4344-AF4C-4F0DF580DBF9}|Post_Nhanh\\Post_Nhanh.csproj|C:\\Git\\Post_Viettel\\post_nhanh\\hoanthanh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B521908C-055F-4344-AF4C-4F0DF580DBF9}|Post_Nhanh\\Post_Nhanh.csproj|solutionrelative:post_nhanh\\hoanthanh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B521908C-055F-4344-AF4C-4F0DF580DBF9}|Post_Nhanh\\Post_Nhanh.csproj|c:\\git\\post_viettel\\post_nhanh\\hanghoa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{B521908C-055F-4344-AF4C-4F0DF580DBF9}|Post_Nhanh\\Post_Nhanh.csproj|solutionrelative:post_nhanh\\hanghoa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B521908C-055F-4344-AF4C-4F0DF580DBF9}|Post_Nhanh\\Post_Nhanh.csproj|c:\\git\\post_viettel\\post_nhanh\\cuocphi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B521908C-055F-4344-AF4C-4F0DF580DBF9}|Post_Nhanh\\Post_Nhanh.csproj|solutionrelative:post_nhanh\\cuocphi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B521908C-055F-4344-AF4C-4F0DF580DBF9}|Post_Nhanh\\Post_Nhanh.csproj|c:\\git\\post_viettel\\post_nhanh\\models\\toalcuocphi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B521908C-055F-4344-AF4C-4F0DF580DBF9}|Post_Nhanh\\Post_Nhanh.csproj|solutionrelative:post_nhanh\\models\\toalcuocphi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B521908C-055F-4344-AF4C-4F0DF580DBF9}|Post_Nhanh\\Post_Nhanh.csproj|C:\\Git\\Post_Viettel\\post_nhanh\\models\\postalitems.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B521908C-055F-4344-AF4C-4F0DF580DBF9}|Post_Nhanh\\Post_Nhanh.csproj|solutionrelative:post_nhanh\\models\\postalitems.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B521908C-055F-4344-AF4C-4F0DF580DBF9}|Post_Nhanh\\Post_Nhanh.csproj|c:\\git\\post_viettel\\post_nhanh\\models\\couries.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B521908C-055F-4344-AF4C-4F0DF580DBF9}|Post_Nhanh\\Post_Nhanh.csproj|solutionrelative:post_nhanh\\models\\couries.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B521908C-055F-4344-AF4C-4F0DF580DBF9}|Post_Nhanh\\Post_Nhanh.csproj|C:\\Git\\Post_Viettel\\post_nhanh\\models\\address.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B521908C-055F-4344-AF4C-4F0DF580DBF9}|Post_Nhanh\\Post_Nhanh.csproj|solutionrelative:post_nhanh\\models\\address.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B521908C-055F-4344-AF4C-4F0DF580DBF9}|Post_Nhanh\\Post_Nhanh.csproj|c:\\git\\post_viettel\\post_nhanh\\cuocphi.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B521908C-055F-4344-AF4C-4F0DF580DBF9}|Post_Nhanh\\Post_Nhanh.csproj|solutionrelative:post_nhanh\\cuocphi.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B521908C-055F-4344-AF4C-4F0DF580DBF9}|Post_Nhanh\\Post_Nhanh.csproj|C:\\Git\\Post_Viettel\\post_nhanh\\hanghoa.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B521908C-055F-4344-AF4C-4F0DF580DBF9}|Post_Nhanh\\Post_Nhanh.csproj|solutionrelative:post_nhanh\\hanghoa.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B521908C-055F-4344-AF4C-4F0DF580DBF9}|Post_Nhanh\\Post_Nhanh.csproj|C:\\Git\\Post_Viettel\\post_nhanh\\models\\sender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B521908C-055F-4344-AF4C-4F0DF580DBF9}|Post_Nhanh\\Post_Nhanh.csproj|solutionrelative:post_nhanh\\models\\sender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B521908C-055F-4344-AF4C-4F0DF580DBF9}|Post_Nhanh\\Post_Nhanh.csproj|C:\\Git\\Post_Viettel\\post_nhanh\\models\\receiver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B521908C-055F-4344-AF4C-4F0DF580DBF9}|Post_Nhanh\\Post_Nhanh.csproj|solutionrelative:post_nhanh\\models\\receiver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B521908C-055F-4344-AF4C-4F0DF580DBF9}|Post_Nhanh\\Post_Nhanh.csproj|C:\\Git\\Post_Viettel\\post_nhanh\\adddon.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B521908C-055F-4344-AF4C-4F0DF580DBF9}|Post_Nhanh\\Post_Nhanh.csproj|solutionrelative:post_nhanh\\adddon.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -97,31 +42,22 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 4,
           "Children": [
             {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "DangNhap.Designer.cs",
-              "DocumentMoniker": "C:\\Git\\Post_Viettel\\Post_Nhanh\\DangNhap.Designer.cs",
-              "RelativeDocumentMoniker": "Post_Nhanh\\DangNhap.Designer.cs",
-              "ToolTip": "C:\\Git\\Post_Viettel\\Post_Nhanh\\DangNhap.Designer.cs",
-              "RelativeToolTip": "Post_Nhanh\\DangNhap.Designer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAyAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-18T09:48:43.546Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "TrangChu.cs [Design]",
-              "DocumentMoniker": "C:\\Git\\Post_Viettel\\Post_Nhanh\\TrangChu.cs",
-              "RelativeDocumentMoniker": "Post_Nhanh\\TrangChu.cs",
-              "ToolTip": "C:\\Git\\Post_Viettel\\Post_Nhanh\\TrangChu.cs [Design]",
-              "RelativeToolTip": "Post_Nhanh\\TrangChu.cs [Design]",
+              "DocumentIndex": 2,
+              "Title": "TraCuuCP.cs [Design]",
+              "DocumentMoniker": "C:\\Git\\Post_Viettel\\Post_Nhanh\\TraCuuCP.cs",
+              "RelativeDocumentMoniker": "Post_Nhanh\\TraCuuCP.cs",
+              "ToolTip": "C:\\Git\\Post_Viettel\\Post_Nhanh\\TraCuuCP.cs [Design]",
+              "RelativeToolTip": "Post_Nhanh\\TraCuuCP.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-18T09:32:49.632Z",
+              "WhenOpened": "2024-10-19T22:07:26.629Z",
               "EditorCaption": " [Design]"
             },
             {
@@ -133,248 +69,81 @@
               "ToolTip": "C:\\Git\\Post_Viettel\\Post_Nhanh\\TraCuuGH.cs [Design]",
               "RelativeToolTip": "Post_Nhanh\\TraCuuGH.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-17T11:19:56.004Z",
+              "WhenOpened": "2024-10-19T22:06:28.225Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "HoanThanh.cs",
+              "DocumentMoniker": "C:\\Git\\Post_Viettel\\Post_Nhanh\\HoanThanh.cs",
+              "RelativeDocumentMoniker": "Post_Nhanh\\HoanThanh.cs",
+              "ToolTip": "C:\\Git\\Post_Viettel\\Post_Nhanh\\HoanThanh.cs*",
+              "RelativeToolTip": "Post_Nhanh\\HoanThanh.cs*",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAB4AAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-19T22:03:42.055Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AddDon.cs",
+              "DocumentMoniker": "C:\\Git\\Post_Viettel\\Post_Nhanh\\AddDon.cs",
+              "RelativeDocumentMoniker": "Post_Nhanh\\AddDon.cs",
+              "ToolTip": "C:\\Git\\Post_Viettel\\Post_Nhanh\\AddDon.cs",
+              "RelativeToolTip": "Post_Nhanh\\AddDon.cs",
+              "ViewState": "AgIAADEAAAAAAAAAAAAQwEsAAABHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-19T20:33:34.616Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AddDon.cs [Design]",
+              "DocumentMoniker": "C:\\Git\\Post_Viettel\\Post_Nhanh\\AddDon.cs",
+              "RelativeDocumentMoniker": "Post_Nhanh\\AddDon.cs",
+              "ToolTip": "C:\\Git\\Post_Viettel\\Post_Nhanh\\AddDon.cs [Design]",
+              "RelativeToolTip": "Post_Nhanh\\AddDon.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-19T17:02:54.319Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "CuocPhi.cs [Design]",
-              "DocumentMoniker": "C:\\Git\\Post_Viettel\\Post_Nhanh\\CuocPhi.cs",
-              "RelativeDocumentMoniker": "Post_Nhanh\\CuocPhi.cs",
-              "ToolTip": "C:\\Git\\Post_Viettel\\Post_Nhanh\\CuocPhi.cs [Design]",
-              "RelativeToolTip": "Post_Nhanh\\CuocPhi.cs [Design]",
+              "Title": "HoanThanh.cs [Design]",
+              "DocumentMoniker": "C:\\Git\\Post_Viettel\\Post_Nhanh\\HoanThanh.cs",
+              "RelativeDocumentMoniker": "Post_Nhanh\\HoanThanh.cs",
+              "ToolTip": "C:\\Git\\Post_Viettel\\Post_Nhanh\\HoanThanh.cs [Design]*",
+              "RelativeToolTip": "Post_Nhanh\\HoanThanh.cs [Design]*",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-17T11:20:01.969Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "DangNhap.cs [Design]",
-              "DocumentMoniker": "C:\\Git\\Post_Viettel\\Post_Nhanh\\DangNhap.cs",
-              "RelativeDocumentMoniker": "Post_Nhanh\\DangNhap.cs",
-              "ToolTip": "C:\\Git\\Post_Viettel\\Post_Nhanh\\DangNhap.cs [Design]",
-              "RelativeToolTip": "Post_Nhanh\\DangNhap.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-17T10:33:20.984Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "DangNhap.cs",
-              "DocumentMoniker": "C:\\Git\\Post_Viettel\\Post_Nhanh\\DangNhap.cs",
-              "RelativeDocumentMoniker": "Post_Nhanh\\DangNhap.cs",
-              "ToolTip": "C:\\Git\\Post_Viettel\\Post_Nhanh\\DangNhap.cs",
-              "RelativeToolTip": "Post_Nhanh\\DangNhap.cs",
-              "ViewState": "AgIAADcAAAAAAAAAAAAkwEQAAABHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-17T10:33:21.886Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "TraCuuCP.cs [Design]",
-              "DocumentMoniker": "C:\\Git\\Post_Viettel\\Post_Nhanh\\TraCuuCP.cs",
-              "RelativeDocumentMoniker": "Post_Nhanh\\TraCuuCP.cs",
-              "ToolTip": "C:\\Git\\Post_Viettel\\Post_Nhanh\\TraCuuCP.cs [Design]",
-              "RelativeToolTip": "Post_Nhanh\\TraCuuCP.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-17T11:19:53.905Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-10-19T20:14:18.7Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Git\\Post_Viettel\\Post_Nhanh\\Program.cs",
-              "RelativeDocumentMoniker": "Post_Nhanh\\Program.cs",
-              "ToolTip": "C:\\Git\\Post_Viettel\\Post_Nhanh\\Program.cs",
-              "RelativeToolTip": "Post_Nhanh\\Program.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAAASwBMAAAAJAAAAAAAAAA==",
+              "Title": "AddDon.Designer.cs",
+              "DocumentMoniker": "C:\\Git\\Post_Viettel\\Post_Nhanh\\AddDon.Designer.cs",
+              "RelativeDocumentMoniker": "Post_Nhanh\\AddDon.Designer.cs",
+              "ToolTip": "C:\\Git\\Post_Viettel\\Post_Nhanh\\AddDon.Designer.cs",
+              "RelativeToolTip": "Post_Nhanh\\AddDon.Designer.cs",
+              "ViewState": "AgIAAOsBAAAAAAAAAAAYwMQBAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-17T10:43:51.594Z",
+              "WhenOpened": "2024-10-19T21:09:53.332Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "DiaChi.cs",
-              "DocumentMoniker": "C:\\Git\\Post_Viettel\\Post_Nhanh\\DiaChi.cs",
-              "RelativeDocumentMoniker": "Post_Nhanh\\DiaChi.cs",
-              "ToolTip": "C:\\Git\\Post_Viettel\\Post_Nhanh\\DiaChi.cs",
-              "RelativeToolTip": "Post_Nhanh\\DiaChi.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAAwB4AAAAuAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "HoanThanh.Designer.cs",
+              "DocumentMoniker": "C:\\Git\\Post_Viettel\\Post_Nhanh\\HoanThanh.Designer.cs",
+              "RelativeDocumentMoniker": "Post_Nhanh\\HoanThanh.Designer.cs",
+              "ToolTip": "C:\\Git\\Post_Viettel\\Post_Nhanh\\HoanThanh.Designer.cs",
+              "RelativeToolTip": "Post_Nhanh\\HoanThanh.Designer.cs",
+              "ViewState": "AgIAAKMAAAAAAAAAAAAAALYAAABGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-17T10:30:53.983Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "DiaChi.cs [Design]",
-              "DocumentMoniker": "C:\\Git\\Post_Viettel\\Post_Nhanh\\DiaChi.cs",
-              "RelativeDocumentMoniker": "Post_Nhanh\\DiaChi.cs",
-              "ToolTip": "C:\\Git\\Post_Viettel\\Post_Nhanh\\DiaChi.cs [Design]",
-              "RelativeToolTip": "Post_Nhanh\\DiaChi.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-17T17:30:23.252Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "HangHoa.cs",
-              "DocumentMoniker": "C:\\Git\\Post_Viettel\\Post_Nhanh\\HangHoa.cs",
-              "RelativeDocumentMoniker": "Post_Nhanh\\HangHoa.cs",
-              "ToolTip": "C:\\Git\\Post_Viettel\\Post_Nhanh\\HangHoa.cs",
-              "RelativeToolTip": "Post_Nhanh\\HangHoa.cs",
-              "ViewState": "AgIAAMcAAAAAAAAAAAAowOAAAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-17T10:53:58.193Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "HangHoa.cs [Design]",
-              "DocumentMoniker": "C:\\Git\\Post_Viettel\\Post_Nhanh\\HangHoa.cs",
-              "RelativeDocumentMoniker": "Post_Nhanh\\HangHoa.cs",
-              "ToolTip": "C:\\Git\\Post_Viettel\\Post_Nhanh\\HangHoa.cs [Design]",
-              "RelativeToolTip": "Post_Nhanh\\HangHoa.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-17T10:46:03.305Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "CuocPhi.cs",
-              "DocumentMoniker": "C:\\Git\\Post_Viettel\\Post_Nhanh\\CuocPhi.cs",
-              "RelativeDocumentMoniker": "Post_Nhanh\\CuocPhi.cs",
-              "ToolTip": "C:\\Git\\Post_Viettel\\Post_Nhanh\\CuocPhi.cs",
-              "RelativeToolTip": "Post_Nhanh\\CuocPhi.cs",
-              "ViewState": "AgIAAFEAAAAAAAAAAAAAwFgAAABPAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-18T07:19:39.162Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Microsoft.Common.CurrentVersion.targets",
-              "DocumentMoniker": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
-              "RelativeDocumentMoniker": "..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
-              "ToolTip": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
-              "RelativeToolTip": "..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
-              "ViewState": "AgIAAOgSAAAAAAAAAAAewAATAABiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
-              "WhenOpened": "2024-10-18T09:18:35.82Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "PostalItems.cs",
-              "DocumentMoniker": "C:\\Git\\Post_Viettel\\Post_Nhanh\\Models\\PostalItems.cs",
-              "RelativeDocumentMoniker": "Post_Nhanh\\Models\\PostalItems.cs",
-              "ToolTip": "C:\\Git\\Post_Viettel\\Post_Nhanh\\Models\\PostalItems.cs",
-              "RelativeToolTip": "Post_Nhanh\\Models\\PostalItems.cs",
-              "ViewState": "AgIAACIAAAAAAAAAAAAkwDoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-17T09:53:18.137Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "Couries.cs",
-              "DocumentMoniker": "C:\\Git\\Post_Viettel\\Post_Nhanh\\Models\\Couries.cs",
-              "RelativeDocumentMoniker": "Post_Nhanh\\Models\\Couries.cs",
-              "ToolTip": "C:\\Git\\Post_Viettel\\Post_Nhanh\\Models\\Couries.cs",
-              "RelativeToolTip": "Post_Nhanh\\Models\\Couries.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-18T08:54:59.998Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "ToalCuocPhi.cs",
-              "DocumentMoniker": "C:\\Git\\Post_Viettel\\Post_Nhanh\\Models\\ToalCuocPhi.cs",
-              "RelativeDocumentMoniker": "Post_Nhanh\\Models\\ToalCuocPhi.cs",
-              "ToolTip": "C:\\Git\\Post_Viettel\\Post_Nhanh\\Models\\ToalCuocPhi.cs",
-              "RelativeToolTip": "Post_Nhanh\\Models\\ToalCuocPhi.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAQwBoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-18T08:25:31.106Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "CuocPhi.Designer.cs",
-              "DocumentMoniker": "C:\\Git\\Post_Viettel\\Post_Nhanh\\CuocPhi.Designer.cs",
-              "RelativeDocumentMoniker": "Post_Nhanh\\CuocPhi.Designer.cs",
-              "ToolTip": "C:\\Git\\Post_Viettel\\Post_Nhanh\\CuocPhi.Designer.cs",
-              "RelativeToolTip": "Post_Nhanh\\CuocPhi.Designer.cs",
-              "ViewState": "AgIAAHEBAAAAAAAAAAAAAIcBAAAiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-18T07:23:50.117Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "Address.cs",
-              "DocumentMoniker": "C:\\Git\\Post_Viettel\\Post_Nhanh\\Models\\Address.cs",
-              "RelativeDocumentMoniker": "Post_Nhanh\\Models\\Address.cs",
-              "ToolTip": "C:\\Git\\Post_Viettel\\Post_Nhanh\\Models\\Address.cs",
-              "RelativeToolTip": "Post_Nhanh\\Models\\Address.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAA3wCUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-17T10:10:52.884Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "Sender.cs",
-              "DocumentMoniker": "C:\\Git\\Post_Viettel\\Post_Nhanh\\Models\\Sender.cs",
-              "RelativeDocumentMoniker": "Post_Nhanh\\Models\\Sender.cs",
-              "ToolTip": "C:\\Git\\Post_Viettel\\Post_Nhanh\\Models\\Sender.cs",
-              "RelativeToolTip": "Post_Nhanh\\Models\\Sender.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAArAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-17T17:07:36.462Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "HangHoa.Designer.cs",
-              "DocumentMoniker": "C:\\Git\\Post_Viettel\\Post_Nhanh\\HangHoa.Designer.cs",
-              "RelativeDocumentMoniker": "Post_Nhanh\\HangHoa.Designer.cs",
-              "ToolTip": "C:\\Git\\Post_Viettel\\Post_Nhanh\\HangHoa.Designer.cs",
-              "RelativeToolTip": "Post_Nhanh\\HangHoa.Designer.cs",
-              "ViewState": "AgIAAGQBAAAAAAAAAAAcwIABAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-17T17:12:36.656Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "Receiver.cs",
-              "DocumentMoniker": "C:\\Git\\Post_Viettel\\Post_Nhanh\\Models\\Receiver.cs",
-              "RelativeDocumentMoniker": "Post_Nhanh\\Models\\Receiver.cs",
-              "ToolTip": "C:\\Git\\Post_Viettel\\Post_Nhanh\\Models\\Receiver.cs",
-              "RelativeToolTip": "Post_Nhanh\\Models\\Receiver.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAArAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-17T17:07:55.627Z"
+              "WhenOpened": "2024-10-19T20:14:37.845Z"
             }
           ]
         }

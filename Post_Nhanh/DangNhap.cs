@@ -10,6 +10,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using BCrypt.Net;
 
 namespace Post_Nhanh
 {
@@ -63,15 +64,12 @@ namespace Post_Nhanh
                 return;
             }
 
-            // Kiểm tra thông tin đăng nhập
-            var filter = Builders<Customer>.Filter.And(
-                Builders<Customer>.Filter.Eq(c => c.PhoneNumber, sodienthoai),
-                Builders<Customer>.Filter.Eq(c => c.Password, password)
-            );
-
+            // Tìm kiếm khách hàng bằng số điện thoại
+            var filter = Builders<Customer>.Filter.Eq(c => c.PhoneNumber, sodienthoai);
             var customer = _customers.Find(filter).FirstOrDefault();
 
-            if (customer != null)
+            // Kiểm tra nếu khách hàng tồn tại và xác thực mật khẩu
+            if (customer != null && BCrypt.Net.BCrypt.Verify(password, customer.Password))
             {
                 MessageBox.Show("Đăng nhập thành công!");
 
@@ -84,6 +82,7 @@ namespace Post_Nhanh
             {
                 MessageBox.Show("Số điện thoại hoặc mật khẩu không đúng.");
             }
+
 
         }
     }
