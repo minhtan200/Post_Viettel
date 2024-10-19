@@ -47,9 +47,10 @@ namespace Post_Nhanh
             // 
             this.lblCustomerName.BackColor = System.Drawing.Color.Red;
             this.lblCustomerName.ForeColor = System.Drawing.Color.White;
-            this.lblCustomerName.Location = new System.Drawing.Point(6, 29);
+            this.lblCustomerName.Location = new System.Drawing.Point(4, 24);
+            this.lblCustomerName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblCustomerName.Name = "lblCustomerName";
-            this.lblCustomerName.Size = new System.Drawing.Size(148, 25);
+            this.lblCustomerName.Size = new System.Drawing.Size(111, 20);
             this.lblCustomerName.TabIndex = 0;
             this.lblCustomerName.Text = "Customer Name";
             // 
@@ -57,9 +58,10 @@ namespace Post_Nhanh
             // 
             this.lblPhoneNumber.BackColor = System.Drawing.Color.Red;
             this.lblPhoneNumber.ForeColor = System.Drawing.Color.White;
-            this.lblPhoneNumber.Location = new System.Drawing.Point(6, 72);
+            this.lblPhoneNumber.Location = new System.Drawing.Point(4, 58);
+            this.lblPhoneNumber.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblPhoneNumber.Name = "lblPhoneNumber";
-            this.lblPhoneNumber.Size = new System.Drawing.Size(139, 25);
+            this.lblPhoneNumber.Size = new System.Drawing.Size(104, 20);
             this.lblPhoneNumber.TabIndex = 1;
             this.lblPhoneNumber.Text = "Phone Number";
             // 
@@ -69,10 +71,10 @@ namespace Post_Nhanh
             this.btnTraCuu.ContextMenuStrip = this.contextMenuStrip1;
             this.btnTraCuu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnTraCuu.ForeColor = System.Drawing.Color.White;
-            this.btnTraCuu.Location = new System.Drawing.Point(203, 82);
+            this.btnTraCuu.Location = new System.Drawing.Point(152, 67);
             this.btnTraCuu.Margin = new System.Windows.Forms.Padding(2);
             this.btnTraCuu.Name = "btnTraCuu";
-            this.btnTraCuu.Size = new System.Drawing.Size(160, 40);
+            this.btnTraCuu.Size = new System.Drawing.Size(120, 32);
             this.btnTraCuu.TabIndex = 2;
             this.btnTraCuu.Text = "Tra Cứu Cước Phí";
             this.btnTraCuu.UseVisualStyleBackColor = false;
@@ -85,18 +87,18 @@ namespace Post_Nhanh
             this.toolStripMenuItem1,
             this.toolStripMenuItem2});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(194, 52);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(186, 52);
             // 
             // toolStripMenuItem1
             // 
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(193, 24);
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(185, 24);
             this.toolStripMenuItem1.Text = "Tra cứu đơn hàng";
             // 
             // toolStripMenuItem2
             // 
             this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(193, 24);
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(185, 24);
             this.toolStripMenuItem2.Text = "Tra cứu cước phí";
             // 
             // btnTaoDon
@@ -104,10 +106,10 @@ namespace Post_Nhanh
             this.btnTaoDon.BackColor = System.Drawing.Color.Red;
             this.btnTaoDon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnTaoDon.ForeColor = System.Drawing.Color.White;
-            this.btnTaoDon.Location = new System.Drawing.Point(289, 36);
+            this.btnTaoDon.Location = new System.Drawing.Point(217, 29);
             this.btnTaoDon.Margin = new System.Windows.Forms.Padding(2);
             this.btnTaoDon.Name = "btnTaoDon";
-            this.btnTaoDon.Size = new System.Drawing.Size(160, 40);
+            this.btnTaoDon.Size = new System.Drawing.Size(120, 32);
             this.btnTaoDon.TabIndex = 1;
             this.btnTaoDon.Text = "Tạo Đơn";
             this.btnTaoDon.UseVisualStyleBackColor = false;
@@ -118,9 +120,11 @@ namespace Post_Nhanh
             this.groupBox1.BackColor = System.Drawing.Color.Red;
             this.groupBox1.Controls.Add(this.lblCustomerName);
             this.groupBox1.Controls.Add(this.lblPhoneNumber);
-            this.groupBox1.Location = new System.Drawing.Point(12, 22);
+            this.groupBox1.Location = new System.Drawing.Point(9, 18);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(160, 100);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Size = new System.Drawing.Size(120, 81);
             this.groupBox1.TabIndex = 3;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông Tin Cá Nhân";
@@ -131,30 +135,31 @@ namespace Post_Nhanh
             this.button1.ContextMenuStrip = this.contextMenuStrip1;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(382, 82);
+            this.button1.Location = new System.Drawing.Point(286, 67);
             this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(160, 40);
+            this.button1.Size = new System.Drawing.Size(120, 32);
             this.button1.TabIndex = 4;
             this.button1.Text = "Tra Cứu Giao Hàng";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // MainForm
+            // TrangChu
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Post_Nhanh.Properties.Resources.BANNER_WEB;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1404, 384);
+            this.ClientSize = new System.Drawing.Size(1053, 312);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btnTaoDon);
             this.Controls.Add(this.btnTraCuu);
             this.DoubleBuffered = true;
             this.Margin = new System.Windows.Forms.Padding(2);
-            this.Name = "MainForm";
+            this.Name = "TrangChu";
             this.Text = "Trangchu";
+            this.Load += new System.EventHandler(this.TrangChu_Load);
             this.contextMenuStrip1.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.ResumeLayout(false);

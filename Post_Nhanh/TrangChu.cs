@@ -55,5 +55,10 @@ namespace Post_Nhanh
             diaChi.Show();
             this.Hide();
         }
+
+        private void TrangChu_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

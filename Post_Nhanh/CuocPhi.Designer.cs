@@ -33,6 +33,9 @@ namespace Post_Nhanh
         {
             this.components = new System.ComponentModel.Container();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.textBoxHoaToc = new System.Windows.Forms.TextBox();
+            this.textBoxNhanh = new System.Windows.Forms.TextBox();
+            this.textBoxTietKiem = new System.Windows.Forms.TextBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -58,9 +61,6 @@ namespace Post_Nhanh
             this.label14 = new System.Windows.Forms.Label();
             this.lblTongTien = new System.Windows.Forms.Label();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
-            this.textBoxTietKiem = new System.Windows.Forms.TextBox();
-            this.textBoxNhanh = new System.Windows.Forms.TextBox();
-            this.textBoxHoaToc = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -90,6 +90,31 @@ namespace Post_Nhanh
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Dịch vụ vận chuyển";
+            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
+            // 
+            // textBoxHoaToc
+            // 
+            this.textBoxHoaToc.Enabled = false;
+            this.textBoxHoaToc.Location = new System.Drawing.Point(291, 163);
+            this.textBoxHoaToc.Name = "textBoxHoaToc";
+            this.textBoxHoaToc.Size = new System.Drawing.Size(89, 25);
+            this.textBoxHoaToc.TabIndex = 14;
+            // 
+            // textBoxNhanh
+            // 
+            this.textBoxNhanh.Enabled = false;
+            this.textBoxNhanh.Location = new System.Drawing.Point(291, 103);
+            this.textBoxNhanh.Name = "textBoxNhanh";
+            this.textBoxNhanh.Size = new System.Drawing.Size(89, 25);
+            this.textBoxNhanh.TabIndex = 13;
+            // 
+            // textBoxTietKiem
+            // 
+            this.textBoxTietKiem.Enabled = false;
+            this.textBoxTietKiem.Location = new System.Drawing.Point(291, 50);
+            this.textBoxTietKiem.Name = "textBoxTietKiem";
+            this.textBoxTietKiem.Size = new System.Drawing.Size(89, 25);
+            this.textBoxTietKiem.TabIndex = 12;
             // 
             // pictureBox3
             // 
@@ -309,30 +334,6 @@ namespace Post_Nhanh
             this.lblTongTien.Size = new System.Drawing.Size(150, 45);
             this.lblTongTien.TabIndex = 6;
             this.lblTongTien.Text = "0 đ";
-            // 
-            // textBoxTietKiem
-            // 
-            this.textBoxTietKiem.Enabled = false;
-            this.textBoxTietKiem.Location = new System.Drawing.Point(291, 50);
-            this.textBoxTietKiem.Name = "textBoxTietKiem";
-            this.textBoxTietKiem.Size = new System.Drawing.Size(89, 30);
-            this.textBoxTietKiem.TabIndex = 12;
-            // 
-            // textBoxNhanh
-            // 
-            this.textBoxNhanh.Enabled = false;
-            this.textBoxNhanh.Location = new System.Drawing.Point(291, 103);
-            this.textBoxNhanh.Name = "textBoxNhanh";
-            this.textBoxNhanh.Size = new System.Drawing.Size(89, 30);
-            this.textBoxNhanh.TabIndex = 13;
-            // 
-            // textBoxHoaToc
-            // 
-            this.textBoxHoaToc.Enabled = false;
-            this.textBoxHoaToc.Location = new System.Drawing.Point(291, 163);
-            this.textBoxHoaToc.Name = "textBoxHoaToc";
-            this.textBoxHoaToc.Size = new System.Drawing.Size(89, 30);
-            this.textBoxHoaToc.TabIndex = 14;
             // 
             // CuocPhi
             // 
