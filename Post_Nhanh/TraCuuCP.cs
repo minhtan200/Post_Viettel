@@ -34,7 +34,7 @@ namespace Post_Nhanh
             // Calculate the shipping costs based on the provided information
             double service1Price = CalculateShippingCost(tuyenDuong, guiTuTinh, guiTuHuyen, guiDenTinh, guiDenHuyen, loaiHang, khoiLuong, dai, rong, cao);
             double service2Price = service1Price * 2; // e.g., Chuyển phát nhanh
-            double service3Price = service1Price * 1.5; // e.g., TMDT Tiết Kiệm
+            double service3Price = service1Price * 1; // e.g., TMDT Tiết Kiệm
 
             // Pass the calculated data to the second form
             TraCuuCP2 form2 = new TraCuuCP2($"{guiTuTinh} - {guiDenTinh}", $"{khoiLuong} kg", $"{service1Price} VND", $"{service2Price} VND", $"{service3Price} VND");

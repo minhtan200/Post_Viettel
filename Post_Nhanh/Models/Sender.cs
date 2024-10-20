@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MongoDB.Bson.Serialization.Attributes;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,7 +9,9 @@ namespace Post_Nhanh.Models
 {
     internal class Sender
     {
+        [BsonElement("Name")]
         public string Name { get; set; }
+        [BsonElement("PhoneNumber")]
         public string PhoneNumber { get; set; }
         public string Address { get; set; }
     }

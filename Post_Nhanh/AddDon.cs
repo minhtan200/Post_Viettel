@@ -263,7 +263,8 @@ namespace Post_Nhanh
                     Receiver = _receiverInfo,
                     Product = _productInfo,
                     Shipping = _shippingInfo,
-                    OrderDate = DateTime.Now
+                    OrderDate = DateTime.Now,
+                    TrangThai = TrangThaiDonHang.TrangThai.ChoXacNhan // Gán trạng thái mặc định
                 };
 
                 // Lưu vào MongoDB
@@ -272,10 +273,7 @@ namespace Post_Nhanh
 
                 // Hiển thị form HoanThanh với chi tiết đơn hàng
                 string recipientInfo = $"{_receiverInfo.Name}"; // Format recipient info
-                string receiverAddress = $"{_receiverInfo.Address}";
-                string receiverPhone = $"{_receiverInfo.PhoneNumber}";
-
-                HoanThanh hoanThanhForm = new HoanThanh(orderCode, donHang.OrderDate, recipientInfo, receiverAddress, receiverPhone);
+                HoanThanh hoanThanhForm = new HoanThanh(orderCode, donHang.OrderDate, recipientInfo);
                 hoanThanhForm.Show();
 
                 // Ẩn hoặc đóng form hiện tại

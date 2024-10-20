@@ -177,14 +177,40 @@
       <DependentUpon>HoanThanh.cs</DependentUpon>
     </Compile>
     <Compile Include="Models\DonHang.cs" />
+    <Compile Include="Models\NhanVien.cs" />
     <Compile Include="Models\ProductInfo.cs" />
     <Compile Include="Models\SenderReceiverInfo.cs" />
     <Compile Include="Models\ShippingInfo.cs" />
+    <Compile Include="Models\TrangThaiDonHang.cs" />
+    <Compile Include="Nhanvien\Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Nhanvien\Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Nhanvien\QuanLyDH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Nhanvien\QuanLyDH.Designer.cs">
+      <DependentUpon>QuanLyDH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Nhanvien\Register.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Nhanvien\Register.Designer.cs">
+      <DependentUpon>Register.cs</DependentUpon>
+    </Compile>
     <Compile Include="TraCuuCP2.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="TraCuuCP2.Designer.cs">
       <DependentUpon>TraCuuCP2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TraCuuGH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TraCuuGH.Designer.cs">
+      <DependentUpon>TraCuuGH.cs</DependentUpon>
     </Compile>
     <Compile Include="TrangChu.cs">
       <SubType>Form</SubType>
@@ -192,15 +218,9 @@
     <Compile Include="TrangChu.Designer.cs">
       <DependentUpon>TrangChu.cs</DependentUpon>
     </Compile>
-    <Compile Include="Models\Address.cs" />
-    <Compile Include="Models\Couries.cs" />
-    <Compile Include="Models\ToalCuocPhi.cs" />
     <Compile Include="Models\Customer.cs" />
-    <Compile Include="Models\PostalItems.cs" />
     <Compile Include="Models\Receiver.cs" />
     <Compile Include="Models\Sender.cs" />
-    <Compile Include="Models\Shipments.cs" />
-    <Compile Include="Models\Tracking.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TraCuuCP.cs">
@@ -208,12 +228,6 @@
     </Compile>
     <Compile Include="TraCuuCP.Designer.cs">
       <DependentUpon>TraCuuCP.cs</DependentUpon>
-    </Compile>
-    <Compile Include="TraCuuGH.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="TraCuuGH.Designer.cs">
-      <DependentUpon>TraCuuGH.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="AddDon.resx">
       <DependentUpon>AddDon.cs</DependentUpon>
@@ -226,6 +240,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="HoanThanh.resx">
       <DependentUpon>HoanThanh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Nhanvien\Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Nhanvien\QuanLyDH.resx">
+      <DependentUpon>QuanLyDH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Nhanvien\Register.resx">
+      <DependentUpon>Register.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TraCuuCP.resx">
       <DependentUpon>TraCuuCP.cs</DependentUpon>

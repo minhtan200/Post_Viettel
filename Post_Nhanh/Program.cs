@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Post_Nhanh.Nhanvien;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -16,7 +17,7 @@ namespace Post_Nhanh
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new DangNhap());
+            Application.Run(new QuanLyDH());
         }
     }
 }

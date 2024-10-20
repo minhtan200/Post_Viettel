@@ -1,6 +1,7 @@
 ﻿using MongoDB.Bson;
 using MongoDB.Driver;
 using Post_Nhanh.Models;
+using Post_Nhanh;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -10,22 +11,20 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using SiteLib.Bcy.Net;
-using BCrypt.Net;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.Button;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
-
-namespace Post_Nhanh
+namespace Post_Nhanh.Nhanvien
 {
-    public partial class DangKy : Form
+    public partial class Register : Form
     {
-        private IMongoCollection<Customer> _customerCollection;
-        public DangKy()
+        private IMongoCollection<NhanVien> _staffCollection;
+        public Register()
         {
             InitializeComponent();
             var client = new MongoClient("mongodb://localhost:27017");
             var database = client.GetDatabase("ViettelPost");
-            _customerCollection = database.GetCollection<Customer>("Customers");
-            // lấy collection Customers để làm việc với các đối tượng Customer.
+            _staffCollection = database.GetCollection<NhanVien>("NhanVien");
         }
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
@@ -46,7 +45,6 @@ namespace Post_Nhanh
 
         private void button1_Click(object sender, EventArgs e)
         {
-
             string email = textBoxEmail.Text;
             string sodienthoai = textBoxSDT.Text;
             string hoten = textBoxTK.Text;
@@ -104,11 +102,8 @@ namespace Post_Nhanh
             }
 
             // Kiểm tra xem người dùng đã tồn tại hay chưa
-            var filter = Builders<Customer>.Filter.Eq(c => c.PhoneNumber, sodienthoai);
-            //tạo một bộ lọc tìm kiếm khách hàng theo số điện thoại.
-            var existingCustomer = _customerCollection.Find(filter).FirstOrDefault();
-            //thực hiện truy vấn để tìm khách hàng có số điện thoại đã cho.
-
+            var filter = Builders<NhanVien>.Filter.Eq(c => c.PhoneNumber, sodienthoai);
+            var existingCustomer = _staffCollection.Find(filter).FirstOrDefault();
             if (existingCustomer != null)
             {
                 MessageBox.Show("Số điện thoại này đã được đăng ký.");
@@ -119,7 +114,7 @@ namespace Post_Nhanh
             string hashedPassword = BCrypt.Net.BCrypt.HashPassword(password);
 
             // Tạo đối tượng Customer mới
-            var newCustomer = new Customer
+            var newStaff = new NhanVien
             {
                 Id = ObjectId.GenerateNewId().ToString(),
                 Email = email,
@@ -129,13 +124,13 @@ namespace Post_Nhanh
             };
 
             // Lưu thông tin người dùng vào MongoDB
-            _customerCollection.InsertOne(newCustomer);
-            //chèn đối tượng newCustomer vào collection Customers.
+            _staffCollection.InsertOne(newStaff);
 
             MessageBox.Show("Đăng ký thành công!");
-            DangNhap loginform = new DangNhap();
+            Login loginform = new Login();
             loginform.Show();
             this.Hide();
         }
     }
 }
+

@@ -121,7 +121,7 @@
             this.dgvTrangThai.RowTemplate.Height = 28;
             this.dgvTrangThai.Size = new System.Drawing.Size(978, 280);
             this.dgvTrangThai.TabIndex = 3;
-            this.dgvTrangThai.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvTrangThai_CellContentClick);
+            this.dgvTrangThai.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.dgvTrangThai_CellFormatting);
             // 
             // progressBarTraCuu
             // 

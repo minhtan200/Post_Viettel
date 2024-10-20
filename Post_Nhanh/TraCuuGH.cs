@@ -1,6 +1,4 @@
-﻿using MongoDB.Bson.Serialization.Attributes;
-using MongoDB.Bson;
-using MongoDB.Driver;
+﻿using MongoDB.Driver;
 using Post_Nhanh.Models;
 using System;
 using System.Collections.Generic;
@@ -11,136 +9,113 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MongoDB.Bson;
+using MongoDB.Bson.Serialization.Attributes;
 
 namespace Post_Nhanh
 {
     public partial class TraCuuGH : Form
     {
-        private IMongoCollection<Shipment> _shipmentCollection;
-        private IMongoCollection<Tracking> _trackingCollection;
-        private readonly IMongoDatabase _database;
+        private readonly IMongoCollection<DonHang> _donHangCollection; // Khai báo collection cho đơn hàng
+        private List<DonHang> danhSachDonHang; // Danh sách đơn hàng
+
         public TraCuuGH()
         {
             InitializeComponent();
+            dgvTrangThai.CellFormatting += dgvTrangThai_CellFormatting;
+            btnTraCuu.Click += btnTraCuu_Click; // Register button click event
+            // Thiết lập kết nối đến MongoDB
+            var client = new MongoClient("mongodb://localhost:27017"); // Thay đổi chuỗi kết nối nếu cần
+            var database = client.GetDatabase("ViettelPost"); // Tên database
+            _donHangCollection = database.GetCollection<DonHang>("DonHang"); // Tên collection
+        }
+    
+
+        private void btnTraCuu_Click(object sender, EventArgs e)
+        {
             try
             {
-                var client = new MongoClient("mongodb://localhost:27017");
-                _database = client.GetDatabase("ViettelPost");
-                _shipmentCollection = _database.GetCollection<Shipment>("Shipments");
-                _trackingCollection = _database.GetCollection<Tracking>("Tracking");
-                MessageBox.Show("Kết nối MongoDB thành công!");
+                string maDonHang = txtMaDonHang.Text.Trim();
+                string soDienThoai = txtPhoneNumber.Text.Trim();
+                List<DonHang> orders = FetchOrders(maDonHang, soDienThoai);
+
+                if (orders.Count == 0)
+                {
+                    MessageBox.Show("Không tìm thấy đơn hàng nào.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    return;
+                }
+
+                DisplayOrderData(orders);
+
+                
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Kết nối MongoDB thất bại: " + ex.Message);
+                MessageBox.Show($"Đã xảy ra lỗi: {ex.Message}", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-
-        private  async void btnTraCuu_Click(object sender, EventArgs e)
+        private void DisplayOrderData(List<DonHang> orders)
         {
-            string packageID = txtMaDonHang.Text.Trim();
-            string phoneNumber = txtPhoneNumber.Text.Trim();  // Lấy số điện thoại từ TextBox
-
-            if (string.IsNullOrEmpty(packageID) && string.IsNullOrEmpty(phoneNumber))
+            var displayData = orders.Select(o => new
             {
-                MessageBox.Show("Vui lòng nhập mã đơn hàng hoặc số điện thoại.");
-                return;
+                Id = o.Id,
+                MaDonHang = o.OrderCode,
+                NguoiGui = o.Sender?.Name ?? "N/A",
+                SDTGui = o.Sender?.PhoneNumber ?? "N/A",
+                DiaChiGui = o.Sender?.Address ?? "N/A",
+                NguoiNhan = o.Receiver?.Name ?? "N/A",
+                SDTNhan = o.Receiver?.PhoneNumber ?? "N/A",
+                DiaChiNhan = o.Receiver?.Address ?? "N/A",
+                TenHangHoa = o.Product?.ProductName ?? "N/A",
+                SoLuong = o.Product?.Quantity.ToString() ?? "N/A",
+                TongGiaTri = o.Product?.TotalValue.ToString("C") ?? "N/A",
+                TrangThai = o.TrangThai != null ? o.TrangThai.ToString() : "N/A"
+            }).ToList();
+
+            dgvTrangThai.DataSource = displayData;
+        }
+        private List<DonHang> FetchOrders(string orderCode, string phoneNumber)
+        {
+            // Tạo điều kiện truy vấn
+            var filter = Builders<DonHang>.Filter.Empty; // khởi tạo rỗng
+            if (!string.IsNullOrEmpty(orderCode))
+            {
+                filter = Builders<DonHang>.Filter.Eq(o => o.OrderCode, orderCode);
+            }
+            if (!string.IsNullOrEmpty(phoneNumber))
+            {
+                var filterPhone = Builders<DonHang>.Filter.Eq(o => o.Sender.PhoneNumber, phoneNumber);
+                filter = filter == Builders<DonHang>.Filter.Empty
+                    ? filterPhone
+                    : Builders<DonHang>.Filter.Or(filter, filterPhone);
             }
 
-            try
-            {
-                FilterDefinition<Shipment> shipmentFilter;
+            // Chỉ lấy các trường cần thiết để hiển thị
+            var projection = Builders<DonHang>.Projection
+                .Include(o => o.OrderCode)
+                .Include(o => o.Sender.Name)
+                .Include(o => o.Sender.PhoneNumber)
+                .Include(o => o.Sender.Address)
+                .Include(o => o.Receiver.Name)
+                .Include(o => o.Receiver.PhoneNumber)
+                .Include(o => o.Receiver.Address)
+                .Include(o => o.Product.ProductName)
+                .Include(o => o.Product.Quantity)
+                .Include(o => o.Product.TotalValue)
+                .Include(o => o.TrangThai);
 
-                // Tạo bộ lọc dựa trên mã đơn hàng hoặc số điện thoại
-                if (!string.IsNullOrEmpty(packageID))
-                {
-                    shipmentFilter = Builders<Shipment>.Filter.Eq(s => s.PackageID, packageID);  // Đổi 'packageID' thành 'PackageID'
-                }
-                else
-                {
-                    shipmentFilter = Builders<Shipment>.Filter.Eq(s => s.CustomerPhoneNumber, phoneNumber);  // Đổi 'customerPhoneNumber' thành 'CustomerPhoneNumber'
-                }
-
-                // Tìm kiếm đơn hàng trong MongoDB
-                var shipmentResult = await _shipmentCollection.Find(shipmentFilter).FirstOrDefaultAsync();
-
-                if (shipmentResult != null)
-                {
-                    var trackingFilter = Builders<Tracking>.Filter.Eq(t => t.PackageID, shipmentResult.PackageID);  // Đổi 'packageID' thành 'PackageID'
-                    var trackingResult = await _trackingCollection.Find(trackingFilter).ToListAsync();
-
-                    if (trackingResult != null && trackingResult.Count > 0)
-                    {
-                        var lastTracking = trackingResult.OrderByDescending(t => t.Timestamp).FirstOrDefault();
-                        lblTrangThaiThongBao.Text = $"Trạng thái hiện tại: {lastTracking.Status}";
-
-                        dgvTrangThai.DataSource = trackingResult.Select(tr => new
-                        {
-                            Trạng_thái = tr.Status,
-                            Vị_trí = tr.Location,
-                            Thời_gian = tr.Timestamp.ToString("yyyy-MM-dd HH:mm:ss")
-                        }).ToList();
-                    }
-                    else
-                    {
-                        lblTrangThaiThongBao.Text = "Không tìm thấy thông tin tracking.";
-                        dgvTrangThai.DataSource = null;
-                    }
-                }
-                else
-                {
-                    lblTrangThaiThongBao.Text = "Không tìm thấy đơn hàng.";
-                    dgvTrangThai.DataSource = null;
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Lỗi trong quá trình tra cứu: " + ex.Message);
-            }
-        }
-        // Định nghĩa class Shipment để ánh xạ dữ liệu MongoDB
-        public class Shipment
-        {
-            [BsonId]
-            [BsonRepresentation(BsonType.ObjectId)]
-            public string _id { get; set; }
-
-            public string PackageID { get; set; }  // Đổi từ 'packageID' thành 'PackageID'
-
-            public string CourierID { get; set; }  // Giữ nguyên
-            public string CustomerPhoneNumber { get; set; }  // Đổi từ 'customerPhoneNumber' thành 'CustomerPhoneNumber'
-
-            public DateTime DateShipped { get; set; }  // Giữ nguyên
-            public DateTime EstimatedDelivery { get; set; }  // Giữ nguyên
-            public string Status { get; set; }  // Giữ nguyên
+            List<DonHang> orders = _donHangCollection.Find(filter)
+                .Project<DonHang>(projection)
+                .ToList();
+            return orders;
         }
 
-        // Định nghĩa class Tracking để ánh xạ dữ liệu MongoDB
-        public class Tracking
+        private void dgvTrangThai_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
         {
-            [BsonId]
-            [BsonRepresentation(BsonType.ObjectId)]
-            public string _id { get; set; }
-
-            public string PackageID { get; set; }  // Đổi từ 'packageID' thành 'PackageID'
-            public string Location { get; set; }  // Giữ nguyên
-            public string Status { get; set; }  // Giữ nguyên
-            public DateTime Timestamp { get; set; }  // Giữ nguyên
-        }
-
-        private void dgvTrangThai_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-            if (e.RowIndex >= 0)
+            if (e.Value == null || e.Value == DBNull.Value)
             {
-                // Lấy thông tin của dòng được chọn
-                DataGridViewRow row = dgvTrangThai.Rows[e.RowIndex];
-
-                // Hiển thị thông tin chi tiết
-                string status = row.Cells["Trạng_thái"].Value.ToString();
-                string location = row.Cells["Vị_trí"].Value.ToString();
-                string timestamp = row.Cells["Thời_gian"].Value.ToString();
-
-                MessageBox.Show($"Trạng thái: {status}\nVị trí: {location}\nThời gian: {timestamp}", "Chi tiết đơn hàng");
+                e.Value = "N/A";
+                e.FormattingApplied = true;
             }
         }
     }
