@@ -53,3 +53,6 @@ C:\Git\Post_Viettel\Post_Nhanh\bin\Debug\Newtonsoft.Json.dll
 C:\Git\Post_Viettel\Post_Nhanh\bin\Debug\SiteLib.Bcy.Net.dll
 C:\Git\Post_Viettel\Post_Nhanh\bin\Debug\BCrypt.Net-Next.xml
 C:\Git\Post_Viettel\Post_Nhanh\bin\Debug\Newtonsoft.Json.xml
+C:\Git\Post_Viettel\Post_Nhanh\obj\Debug\Post_Nhanh.TraCuuCP.resources
+C:\Git\Post_Viettel\Post_Nhanh\obj\Debug\Post_Nhanh.TraCuuCP2.resources
+C:\Git\Post_Viettel\Post_Nhanh\obj\Debug\Post_Nhanh.TraCuuGH.resources

@@ -18,14 +18,13 @@ namespace Post_Nhanh
         private TextBox txtRecipientInfo; // TextBox for recipient info
         private string name;
         private string phone;
-        public HoanThanh(string orderCode, DateTime orderDate, string recipientInfo, string receiverAddress, string receiverPhone)
+        public HoanThanh(string orderCode, DateTime orderDate, string recipientInfo)
         {
             InitializeComponent();
             lblMaDonHang.Text = orderCode; // Set the order code
             lblNgayTao.Text += orderDate.ToString("dd/MM/yyyy"); // Set the order date
             lblThongTinNguoiNhan.Text += recipientInfo; // Set the recipient info
-            label4.Text += receiverAddress.ToString();
-            label6.Text += receiverPhone.ToString();
+
         }
 
         private void btnTaoDonMoi_Click(object sender, EventArgs e)

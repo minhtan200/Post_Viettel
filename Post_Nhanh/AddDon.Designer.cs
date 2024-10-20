@@ -50,6 +50,10 @@ namespace Post_Nhanh
             this.receiverAddressLabel = new System.Windows.Forms.Label();
             this.receiverAddressTextBox = new System.Windows.Forms.TextBox();
             this.tabHangHoa = new System.Windows.Forms.TabPage();
+            this.textBoxTotalGT = new System.Windows.Forms.TextBox();
+            this.textBoxTotalWeight = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.buttonProductTiepTuc = new System.Windows.Forms.Button();
             this.groupBoxImageProduct = new System.Windows.Forms.GroupBox();
             this.textBoxWidth = new System.Windows.Forms.TextBox();
@@ -57,11 +61,18 @@ namespace Post_Nhanh
             this.textBoxLenght = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.buttonDeleteImage = new System.Windows.Forms.Button();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.buttonUploadImage = new System.Windows.Forms.Button();
-            this.textBoxWeight = new System.Windows.Forms.TextBox();
             this.groupBoxProduct = new System.Windows.Forms.GroupBox();
+            this.panelProduct = new System.Windows.Forms.Panel();
+            this.label22 = new System.Windows.Forms.Label();
+            this.textBoxTenSP = new System.Windows.Forms.TextBox();
+            this.textBoxSL = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.label20 = new System.Windows.Forms.Label();
+            this.textBoxGT = new System.Windows.Forms.TextBox();
+            this.label21 = new System.Windows.Forms.Label();
+            this.textBoxWeight = new System.Windows.Forms.TextBox();
+            this.label19 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.tabCuocPhi = new System.Windows.Forms.TabPage();
             this.label18 = new System.Windows.Forms.Label();
@@ -84,9 +95,6 @@ namespace Post_Nhanh
             this.textBoxHoaToc = new System.Windows.Forms.TextBox();
             this.textBoxNhanh = new System.Windows.Forms.TextBox();
             this.textBoxTietKiem = new System.Windows.Forms.TextBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.label15 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
@@ -94,36 +102,28 @@ namespace Post_Nhanh
             this.radioButtonNhanh = new System.Windows.Forms.RadioButton();
             this.radioButtonTietKiem = new System.Windows.Forms.RadioButton();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
-            this.textBoxTotalGT = new System.Windows.Forms.TextBox();
-            this.textBoxTotalWeight = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.panelProduct = new System.Windows.Forms.Panel();
-            this.label19 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
-            this.textBoxSL = new System.Windows.Forms.TextBox();
-            this.label21 = new System.Windows.Forms.Label();
-            this.textBoxTenSP = new System.Windows.Forms.TextBox();
-            this.textBoxGT = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.label22 = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.tabControl.SuspendLayout();
             this.tabDiaChi.SuspendLayout();
             this.senderGroup.SuspendLayout();
             this.receiverGroup.SuspendLayout();
             this.tabHangHoa.SuspendLayout();
             this.groupBoxImageProduct.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBoxProduct.SuspendLayout();
+            this.panelProduct.SuspendLayout();
             this.tabCuocPhi.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            this.panelProduct.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl
@@ -322,6 +322,42 @@ namespace Post_Nhanh
             this.tabHangHoa.TabIndex = 1;
             this.tabHangHoa.Text = "Hàng hóa";
             // 
+            // textBoxTotalGT
+            // 
+            this.textBoxTotalGT.Enabled = false;
+            this.textBoxTotalGT.Location = new System.Drawing.Point(1086, 390);
+            this.textBoxTotalGT.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBoxTotalGT.Name = "textBoxTotalGT";
+            this.textBoxTotalGT.Size = new System.Drawing.Size(95, 22);
+            this.textBoxTotalGT.TabIndex = 19;
+            // 
+            // textBoxTotalWeight
+            // 
+            this.textBoxTotalWeight.Enabled = false;
+            this.textBoxTotalWeight.Location = new System.Drawing.Point(1086, 363);
+            this.textBoxTotalWeight.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBoxTotalWeight.Name = "textBoxTotalWeight";
+            this.textBoxTotalWeight.Size = new System.Drawing.Size(95, 22);
+            this.textBoxTotalWeight.TabIndex = 18;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(650, 396);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(77, 16);
+            this.label5.TabIndex = 17;
+            this.label5.Text = "Tổng giá trị:";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(650, 369);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(106, 16);
+            this.label4.TabIndex = 16;
+            this.label4.Text = "Tổng khối lượng:";
+            // 
             // buttonProductTiepTuc
             // 
             this.buttonProductTiepTuc.BackColor = System.Drawing.Color.Red;
@@ -400,24 +436,6 @@ namespace Post_Nhanh
             this.buttonDeleteImage.UseVisualStyleBackColor = true;
             this.buttonDeleteImage.Click += new System.EventHandler(this.buttonDeleteImage_Click);
             // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Location = new System.Drawing.Point(320, 33);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(165, 146);
-            this.pictureBox2.TabIndex = 2;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Location = new System.Drawing.Point(121, 33);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(166, 146);
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
-            // 
             // buttonUploadImage
             // 
             this.buttonUploadImage.Location = new System.Drawing.Point(6, 38);
@@ -428,15 +446,6 @@ namespace Post_Nhanh
             this.buttonUploadImage.Text = "Chọn ảnh";
             this.buttonUploadImage.UseVisualStyleBackColor = true;
             this.buttonUploadImage.Click += new System.EventHandler(this.buttonUploadImage_Click);
-            // 
-            // textBoxWeight
-            // 
-            this.textBoxWeight.Location = new System.Drawing.Point(433, 58);
-            this.textBoxWeight.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBoxWeight.Name = "textBoxWeight";
-            this.textBoxWeight.Size = new System.Drawing.Size(95, 22);
-            this.textBoxWeight.TabIndex = 13;
-            this.textBoxWeight.TextChanged += new System.EventHandler(this.textBoxWeight_TextChanged);
             // 
             // groupBoxProduct
             // 
@@ -449,6 +458,103 @@ namespace Post_Nhanh
             this.groupBoxProduct.TabIndex = 12;
             this.groupBoxProduct.TabStop = false;
             this.groupBoxProduct.Text = "Hàng Hóa";
+            // 
+            // panelProduct
+            // 
+            this.panelProduct.Controls.Add(this.label22);
+            this.panelProduct.Controls.Add(this.textBoxTenSP);
+            this.panelProduct.Controls.Add(this.textBoxSL);
+            this.panelProduct.Controls.Add(this.button1);
+            this.panelProduct.Controls.Add(this.label20);
+            this.panelProduct.Controls.Add(this.textBoxGT);
+            this.panelProduct.Controls.Add(this.label21);
+            this.panelProduct.Controls.Add(this.textBoxWeight);
+            this.panelProduct.Controls.Add(this.label19);
+            this.panelProduct.Location = new System.Drawing.Point(6, 20);
+            this.panelProduct.Name = "panelProduct";
+            this.panelProduct.Size = new System.Drawing.Size(531, 759);
+            this.panelProduct.TabIndex = 14;
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Location = new System.Drawing.Point(4, 17);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(90, 16);
+            this.label22.TabIndex = 0;
+            this.label22.Text = "Tên hàng hóa";
+            // 
+            // textBoxTenSP
+            // 
+            this.textBoxTenSP.Location = new System.Drawing.Point(107, 13);
+            this.textBoxTenSP.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBoxTenSP.Name = "textBoxTenSP";
+            this.textBoxTenSP.Size = new System.Drawing.Size(196, 22);
+            this.textBoxTenSP.TabIndex = 2;
+            // 
+            // textBoxSL
+            // 
+            this.textBoxSL.Location = new System.Drawing.Point(405, 16);
+            this.textBoxSL.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBoxSL.Name = "textBoxSL";
+            this.textBoxSL.Size = new System.Drawing.Size(123, 22);
+            this.textBoxSL.TabIndex = 4;
+            this.textBoxSL.TextChanged += new System.EventHandler(this.textBoxSL_TextChanged);
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(174, 105);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(141, 25);
+            this.button1.TabIndex = 13;
+            this.button1.Text = " + Thêm hàng hóa";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.buttonAddProduct_Click);
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Location = new System.Drawing.Point(329, 63);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(88, 16);
+            this.label20.TabIndex = 7;
+            this.label20.Text = "Khối lượng (g)";
+            // 
+            // textBoxGT
+            // 
+            this.textBoxGT.Location = new System.Drawing.Point(107, 58);
+            this.textBoxGT.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBoxGT.Name = "textBoxGT";
+            this.textBoxGT.Size = new System.Drawing.Size(196, 22);
+            this.textBoxGT.TabIndex = 6;
+            this.textBoxGT.TextChanged += new System.EventHandler(this.textBoxGT_TextChanged);
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Location = new System.Drawing.Point(329, 15);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(60, 16);
+            this.label21.TabIndex = 3;
+            this.label21.Text = "Số lượng";
+            // 
+            // textBoxWeight
+            // 
+            this.textBoxWeight.Location = new System.Drawing.Point(433, 58);
+            this.textBoxWeight.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBoxWeight.Name = "textBoxWeight";
+            this.textBoxWeight.Size = new System.Drawing.Size(95, 22);
+            this.textBoxWeight.TabIndex = 13;
+            this.textBoxWeight.TextChanged += new System.EventHandler(this.textBoxWeight_TextChanged);
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Location = new System.Drawing.Point(4, 58);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(57, 16);
+            this.label19.TabIndex = 5;
+            this.label19.Text = "Giá trị(đ)";
             // 
             // label1
             // 
@@ -687,30 +793,6 @@ namespace Post_Nhanh
             this.textBoxTietKiem.Size = new System.Drawing.Size(89, 30);
             this.textBoxTietKiem.TabIndex = 12;
             // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Location = new System.Drawing.Point(20, 154);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(32, 32);
-            this.pictureBox3.TabIndex = 0;
-            this.pictureBox3.TabStop = false;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Location = new System.Drawing.Point(20, 103);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(32, 32);
-            this.pictureBox4.TabIndex = 1;
-            this.pictureBox4.TabStop = false;
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.Location = new System.Drawing.Point(20, 52);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(32, 32);
-            this.pictureBox5.TabIndex = 2;
-            this.pictureBox5.TabStop = false;
-            // 
             // label15
             // 
             this.label15.Location = new System.Drawing.Point(80, 183);
@@ -748,7 +830,7 @@ namespace Post_Nhanh
             // 
             this.radioButtonNhanh.Location = new System.Drawing.Point(60, 105);
             this.radioButtonNhanh.Name = "radioButtonNhanh";
-            this.radioButtonNhanh.Size = new System.Drawing.Size(104, 28);
+            this.radioButtonNhanh.Size = new System.Drawing.Size(156, 28);
             this.radioButtonNhanh.TabIndex = 10;
             this.radioButtonNhanh.Text = "TMDT Nhanh";
             this.radioButtonNhanh.CheckedChanged += new System.EventHandler(this.radioButtonNhanh_CheckedChanged);
@@ -757,134 +839,52 @@ namespace Post_Nhanh
             // 
             this.radioButtonTietKiem.Location = new System.Drawing.Point(60, 52);
             this.radioButtonTietKiem.Name = "radioButtonTietKiem";
-            this.radioButtonTietKiem.Size = new System.Drawing.Size(150, 28);
+            this.radioButtonTietKiem.Size = new System.Drawing.Size(156, 28);
             this.radioButtonTietKiem.TabIndex = 11;
             this.radioButtonTietKiem.Text = "TMDT Tiết Kiệm";
             this.radioButtonTietKiem.CheckedChanged += new System.EventHandler(this.radioButtonTietKiem_CheckedChanged);
             // 
-            // textBoxTotalGT
+            // pictureBox2
             // 
-            this.textBoxTotalGT.Enabled = false;
-            this.textBoxTotalGT.Location = new System.Drawing.Point(1086, 390);
-            this.textBoxTotalGT.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBoxTotalGT.Name = "textBoxTotalGT";
-            this.textBoxTotalGT.Size = new System.Drawing.Size(95, 22);
-            this.textBoxTotalGT.TabIndex = 19;
+            this.pictureBox2.Location = new System.Drawing.Point(320, 33);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(165, 146);
+            this.pictureBox2.TabIndex = 2;
+            this.pictureBox2.TabStop = false;
             // 
-            // textBoxTotalWeight
+            // pictureBox1
             // 
-            this.textBoxTotalWeight.Enabled = false;
-            this.textBoxTotalWeight.Location = new System.Drawing.Point(1086, 363);
-            this.textBoxTotalWeight.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBoxTotalWeight.Name = "textBoxTotalWeight";
-            this.textBoxTotalWeight.Size = new System.Drawing.Size(95, 22);
-            this.textBoxTotalWeight.TabIndex = 18;
+            this.pictureBox1.Location = new System.Drawing.Point(121, 33);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(166, 146);
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
             // 
-            // label5
+            // pictureBox3
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(650, 396);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(77, 16);
-            this.label5.TabIndex = 17;
-            this.label5.Text = "Tổng giá trị:";
+            this.pictureBox3.Location = new System.Drawing.Point(20, 154);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(32, 32);
+            this.pictureBox3.TabIndex = 0;
+            this.pictureBox3.TabStop = false;
             // 
-            // label4
+            // pictureBox4
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(650, 369);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(106, 16);
-            this.label4.TabIndex = 16;
-            this.label4.Text = "Tổng khối lượng:";
+            this.pictureBox4.Location = new System.Drawing.Point(20, 103);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(32, 32);
+            this.pictureBox4.TabIndex = 1;
+            this.pictureBox4.TabStop = false;
             // 
-            // panelProduct
+            // pictureBox5
             // 
-            this.panelProduct.Controls.Add(this.label22);
-            this.panelProduct.Controls.Add(this.textBoxTenSP);
-            this.panelProduct.Controls.Add(this.textBoxSL);
-            this.panelProduct.Controls.Add(this.button1);
-            this.panelProduct.Controls.Add(this.label20);
-            this.panelProduct.Controls.Add(this.textBoxGT);
-            this.panelProduct.Controls.Add(this.label21);
-            this.panelProduct.Controls.Add(this.textBoxWeight);
-            this.panelProduct.Controls.Add(this.label19);
-            this.panelProduct.Location = new System.Drawing.Point(6, 20);
-            this.panelProduct.Name = "panelProduct";
-            this.panelProduct.Size = new System.Drawing.Size(531, 759);
-            this.panelProduct.TabIndex = 14;
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(4, 58);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(57, 16);
-            this.label19.TabIndex = 5;
-            this.label19.Text = "Giá trị(đ)";
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(329, 63);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(88, 16);
-            this.label20.TabIndex = 7;
-            this.label20.Text = "Khối lượng (g)";
-            // 
-            // textBoxSL
-            // 
-            this.textBoxSL.Location = new System.Drawing.Point(405, 16);
-            this.textBoxSL.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBoxSL.Name = "textBoxSL";
-            this.textBoxSL.Size = new System.Drawing.Size(123, 22);
-            this.textBoxSL.TabIndex = 4;
-            this.textBoxSL.TextChanged += new System.EventHandler(this.textBoxSL_TextChanged);
-            // 
-            // label21
-            // 
-            this.label21.AutoSize = true;
-            this.label21.Location = new System.Drawing.Point(329, 15);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(60, 16);
-            this.label21.TabIndex = 3;
-            this.label21.Text = "Số lượng";
-            // 
-            // textBoxTenSP
-            // 
-            this.textBoxTenSP.Location = new System.Drawing.Point(107, 13);
-            this.textBoxTenSP.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBoxTenSP.Name = "textBoxTenSP";
-            this.textBoxTenSP.Size = new System.Drawing.Size(196, 22);
-            this.textBoxTenSP.TabIndex = 2;
-            // 
-            // textBoxGT
-            // 
-            this.textBoxGT.Location = new System.Drawing.Point(107, 58);
-            this.textBoxGT.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBoxGT.Name = "textBoxGT";
-            this.textBoxGT.Size = new System.Drawing.Size(196, 22);
-            this.textBoxGT.TabIndex = 6;
-            this.textBoxGT.TextChanged += new System.EventHandler(this.textBoxGT_TextChanged);
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(174, 105);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(141, 25);
-            this.button1.TabIndex = 13;
-            this.button1.Text = " + Thêm hàng hóa";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.buttonAddProduct_Click);
-            // 
-            // label22
-            // 
-            this.label22.AutoSize = true;
-            this.label22.Location = new System.Drawing.Point(4, 17);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(90, 16);
-            this.label22.TabIndex = 0;
-            this.label22.Text = "Tên hàng hóa";
+            this.pictureBox5.Location = new System.Drawing.Point(20, 52);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(32, 32);
+            this.pictureBox5.TabIndex = 2;
+            this.pictureBox5.TabStop = false;
             // 
             // AddDon
             // 
@@ -902,20 +902,20 @@ namespace Post_Nhanh
             this.tabHangHoa.PerformLayout();
             this.groupBoxImageProduct.ResumeLayout(false);
             this.groupBoxImageProduct.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.groupBoxProduct.ResumeLayout(false);
+            this.panelProduct.ResumeLayout(false);
+            this.panelProduct.PerformLayout();
             this.tabCuocPhi.ResumeLayout(false);
             this.tabCuocPhi.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox3.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            this.panelProduct.ResumeLayout(false);
-            this.panelProduct.PerformLayout();
             this.ResumeLayout(false);
 
         }

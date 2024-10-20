@@ -180,6 +180,12 @@
     <Compile Include="Models\ProductInfo.cs" />
     <Compile Include="Models\SenderReceiverInfo.cs" />
     <Compile Include="Models\ShippingInfo.cs" />
+    <Compile Include="TraCuuCP2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TraCuuCP2.Designer.cs">
+      <DependentUpon>TraCuuCP2.cs</DependentUpon>
+    </Compile>
     <Compile Include="TrangChu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -220,6 +226,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="HoanThanh.resx">
       <DependentUpon>HoanThanh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TraCuuCP.resx">
+      <DependentUpon>TraCuuCP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TraCuuCP2.resx">
+      <DependentUpon>TraCuuCP2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TraCuuGH.resx">
+      <DependentUpon>TraCuuGH.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TrangChu.resx">
       <DependentUpon>TrangChu.cs</DependentUpon>
